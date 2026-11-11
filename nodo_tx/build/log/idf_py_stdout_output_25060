@@ -1,0 +1,495 @@
+Command: C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:\esp\v5.5.3\esp-idf\tools/idf_monitor.py -p COM6 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ayele\OneDrive\Escritorio\biosense\biosense\nodo_tx\build\biosense_tx.elf C:\Users\ayele\OneDrive\Escritorio\biosense\biosense\nodo_tx\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe' 'C:\esp\v5.5.3\esp-idf\tools\idf.py' '-p' 'COM6'
+�DIO
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot�ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct 27 2026 14:49:54[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e620h ( 58912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001e648 vaddr=3fc95600 size=019d0h (  6608) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=215f0h (136688) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00041618 vaddr=3fc96fd0 size=0199ch (  6556) load[0m
+[0;32mI (127) esp_image: segment 4: paddr=00042fbc vaddr=40374000 size=115cch ( 71116) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=00054590 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     biosense_tx[0m
+[0;32mI (181) app_init: App version:      a81e515-dirty[0m
+[0;32mI (186) app_init: Compile time:     Oct 27 2026 14:47:13[0m
+[0;32mI (191) app_init: ELF file SHA256:  73e8fecfc...[0m
+[0;32mI (195) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (199) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (203) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (210) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (217) heap_init: At 3FC99328 len 000503E8 (320 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (227) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (238) spi_flash: detected chip: gd[0m
+[0;32mI (241) spi_flash: flash io: dio[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) TX: BIOSENSE - Nodo transmisor[0m
+[0;32mI (289) sensors: Sensores inicializados[0m
+[0;32mI (353) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[0;32mI (354) RTC: DS3231 inicializado[0m
+[0;33mW (355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (374) main_task: Returned from app_main()[0m
+[0;32mI (375) RTC: 27/10/2026 14:51:00[0m
+[0;32mI (376) TX: Trama: 2026-10-27 14:51:00,-127.00,132.13,14.00,1.98,83.87[0m
+[0;32mI (485) TX: Datos enviados[0m
+[0;33mW (5355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (5372) RTC: 27/10/2026 14:51:05[0m
+[0;32mI (5373) TX: Trama: 2026-10-27 14:51:05,-127.00,135.05,14.00,2.11,45.81[0m
+[0;32mI (5482) TX: Datos enviados[0m
+[0;33mW (10355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (10372) RTC: 27/10/2026 14:51:10[0m
+[0;32mI (10373) TX: Trama: 2026-10-27 14:51:10,-127.00,135.41,14.00,2.10,48.39[0m
+[0;32mI (10482) TX: Datos enviados[0m
+[0;33mW (15355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (15372) RTC: 27/10/2026 14:51:15[0m
+[0;32mI (15373) TX: Trama: 2026-10-27 14:51:15,-127.00,135.78,14.00,2.12,48.39[0m
+[0;32mI (15482) TX: Datos enviados[0m
+[0;33mW (20355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (20372) RTC: 27/10/2026 14:51:20[0m
+[0;32mI (20373) TX: Trama: 2026-10-27 14:51:20,-127.00,136.87,14.00,2.13,48.71[0m
+[0;32mI (20482) TX: Datos enviados[0m
+[0;33mW (25355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (25372) RTC: 27/10/2026 14:51:25[0m
+[0;32mI (25373) TX: Trama: 2026-10-27 14:51:25,-127.00,135.41,14.00,2.11,46.77[0m
+[0;32mI (25482) TX: Datos enviados[0m
+[0;33mW (30355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (30372) RTC: 27/10/2026 14:51:30[0m
+[0;32mI (30373) TX: Trama: 2026-10-27 14:51:30,-127.00,135.78,14.00,2.10,47.74[0m
+[0;32mI (30482) TX: Datos enviados[0m
+[0;33mW (35355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (35372) RTC: 27/10/2026 14:51:35[0m
+[0;32mI (35373) TX: Trama: 2026-10-27 14:51:35,-127.00,136.14,14.00,2.13,48.39[0m
+[0;32mI (35482) TX: Datos enviados[0m
+[0;33mW (40355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (40372) RTC: 27/10/2026 14:51:40[0m
+[0;32mI (40373) TX: Trama: 2026-10-27 14:51:40,-127.00,136.14,14.00,2.14,46.77[0m
+[0;32mI (40482) TX: Datos enviados[0m
+[0;33mW (45355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (45372) RTC: 27/10/2026 14:51:45[0m
+[0;32mI (45373) TX: Trama: 2026-10-27 14:51:45,-127.00,136.50,14.00,2.13,46.77[0m
+[0;32mI (45482) TX: Datos enviados[0m
+[0;33mW (50355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (50372) RTC: 27/10/2026 14:51:50[0m
+[0;32mI (50373) TX: Trama: 2026-10-27 14:51:50,-127.00,136.14,14.00,2.12,48.06[0m
+[0;32mI (50482) TX: Datos enviados[0m
+[0;33mW (55355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (55372) RTC: 27/10/2026 14:51:55[0m
+[0;32mI (55373) TX: Trama: 2026-10-27 14:51:55,-127.00,136.50,14.00,2.14,48.39[0m
+[0;32mI (55482) TX: Datos enviados[0m
+[0;33mW (60355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (60372) RTC: 27/10/2026 14:52:00[0m
+[0;32mI (60373) TX: Trama: 2026-10-27 14:52:00,-127.00,136.87,14.00,2.12,48.06[0m
+[0;32mI (60482) TX: Datos enviados[0m
+[0;33mW (65355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (65372) RTC: 27/10/2026 14:52:05[0m
+[0;32mI (65373) TX: Trama: 2026-10-27 14:52:05,-127.00,136.50,14.00,2.11,47.42[0m
+[0;32mI (65482) TX: Datos enviados[0m
+[0;33mW (70355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (70372) RTC: 27/10/2026 14:52:10[0m
+[0;32mI (70373) TX: Trama: 2026-10-27 14:52:10,-127.00,136.87,14.00,2.12,48.39[0m
+[0;32mI (70482) TX: Datos enviados[0m
+[0;33mW (75355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (75372) RTC: 27/10/2026 14:52:15[0m
+[0;32mI (75373) TX: Trama: 2026-10-27 14:52:15,-127.00,136.50,14.00,2.12,48.06[0m
+[0;32mI (75482) TX: Datos enviados[0m
+[0;33mW (80355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (80372) RTC: 27/10/2026 14:52:20[0m
+[0;32mI (80373) TX: Trama: 2026-10-27 14:52:20,-127.00,136.87,14.00,2.11,47.42[0m
+[0;32mI (80482) TX: Datos enviados[0m
+[0;33mW (85355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (85372) RTC: 27/10/2026 14:52:25[0m
+[0;32mI (85373) TX: Trama: 2026-10-27 14:52:25,-127.00,137.96,14.00,2.12,46.45[0m
+[0;32mI (85482) TX: Datos enviados[0m
+[0;33mW (90355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (90372) RTC: 27/10/2026 14:52:30[0m
+[0;32mI (90373) TX: Trama: 2026-10-27 14:52:30,-127.00,136.87,14.00,2.14,46.77[0m
+[0;32mI (90482) TX: Datos enviados[0m
+[0;33mW (95355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (95372) RTC: 27/10/2026 14:52:35[0m
+[0;32mI (95373) TX: Trama: 2026-10-27 14:52:35,-127.00,136.50,14.00,2.13,47.42[0m
+[0;32mI (95482) TX: Datos enviados[0m
+[0;33mW (100355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (100372) RTC: 27/10/2026 14:52:40[0m
+[0;32mI (100373) TX: Trama: 2026-10-27 14:52:40,-127.00,136.50,14.00,2.14,47.42[0m
+[0;32mI (100482) TX: Datos enviados[0m
+[0;33mW (105355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (105372) RTC: 27/10/2026 14:52:45[0m
+[0;32mI (105373) TX: Trama: 2026-10-27 14:52:45,-127.00,137.96,14.00,2.15,47.42[0m
+[0;32mI (105482) TX: Datos enviados[0m
+[0;33mW (110355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (110372) RTC: 27/10/2026 14:52:50[0m
+[0;32mI (110373) TX: Trama: 2026-10-27 14:52:50,-127.00,137.60,14.00,2.20,47.42[0m
+[0;32mI (110482) TX: Datos enviados[0m
+[0;33mW (115355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (115372) RTC: 27/10/2026 14:52:55[0m
+[0;32mI (115373) TX: Trama: 2026-10-27 14:52:55,-127.00,137.60,14.00,2.15,48.39[0m
+[0;32mI (115482) TX: Datos enviados[0m
+[0;33mW (120355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (120372) RTC: 27/10/2026 14:53:00[0m
+[0;32mI (120373) TX: Trama: 2026-10-27 14:53:00,-127.00,138.32,14.00,2.15,46.77[0m
+[0;32mI (120482) TX: Datos enviados[0m
+[0;33mW (125355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (125372) RTC: 27/10/2026 14:53:05[0m
+[0;32mI (125373) TX: Trama: 2026-10-27 14:53:05,-127.00,137.96,14.00,2.14,46.77[0m
+[0;32mI (125482) TX: Datos enviados[0m
+[0;33mW (130355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (130372) RTC: 27/10/2026 14:53:10[0m
+[0;32mI (130373) TX: Trama: 2026-10-27 14:53:10,-127.00,136.87,14.00,2.13,48.39[0m
+[0;32mI (130482) TX: Datos enviados[0m
+[0;33mW (135355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (135372) RTC: 27/10/2026 14:53:15[0m
+[0;32mI (135373) TX: Trama: 2026-10-27 14:53:15,-127.00,138.69,14.00,2.15,47.74[0m
+[0;32mI (135482) TX: Datos enviados[0m
+[0;33mW (140355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (140372) RTC: 27/10/2026 14:53:20[0m
+[0;32mI (140373) TX: Trama: 2026-10-27 14:53:20,-127.00,139.77,14.00,2.15,45.81[0m
+[0;32mI (140482) TX: Datos enviados[0m
+[0;33mW (145355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (145372) RTC: 27/10/2026 14:53:25[0m
+[0;32mI (145373) TX: Trama: 2026-10-27 14:53:25,-127.00,141.23,14.00,2.15,47.74[0m
+[0;32mI (145482) TX: Datos enviados[0m
+[0;33mW (150355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (150372) RTC: 27/10/2026 14:53:30[0m
+[0;32mI (150373) TX: Trama: 2026-10-27 14:53:30,-127.00,144.84,14.00,2.15,48.39[0m
+[0;32mI (150482) TX: Datos enviados[0m
+[0;33mW (155355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (155372) RTC: 27/10/2026 14:53:35[0m
+[0;32mI (155373) TX: Trama: 2026-10-27 14:53:35,-127.00,145.93,14.00,2.14,47.42[0m
+[0;32mI (155482) TX: Datos enviados[0m
+[0;33mW (160355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (160372) RTC: 27/10/2026 14:53:40[0m
+[0;32mI (160373) TX: Trama: 2026-10-27 14:53:40,-127.00,147.73,14.00,2.15,46.77[0m
+[0;32mI (160482) TX: Datos enviados[0m
+[0;33mW (165355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (165372) RTC: 27/10/2026 14:53:45[0m
+[0;32mI (165373) TX: Trama: 2026-10-27 14:53:45,-127.00,148.45,14.00,2.15,48.06[0m
+[0;32mI (165482) TX: Datos enviados[0m
+[0;33mW (170355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (170372) RTC: 27/10/2026 14:53:50[0m
+[0;32mI (170373) TX: Trama: 2026-10-27 14:53:50,-127.00,146.65,14.00,2.15,49.35[0m
+[0;32mI (170482) TX: Datos enviados[0m
+[0;33mW (175355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (175372) RTC: 27/10/2026 14:53:55[0m
+[0;32mI (175373) TX: Trama: 2026-10-27 14:53:55,-127.00,146.65,14.00,2.14,47.42[0m
+[0;32mI (175482) TX: Datos enviados[0m
+[0;33mW (180355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (180372) RTC: 27/10/2026 14:54:00[0m
+[0;32mI (180373) TX: Trama: 2026-10-27 14:54:00,-127.00,148.45,14.00,2.15,47.42[0m
+[0;32mI (180482) TX: Datos enviados[0m
+[0;33mW (185355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (185372) RTC: 27/10/2026 14:54:05[0m
+[0;32mI (185373) TX: Trama: 2026-10-27 14:54:05,-127.00,147.73,14.00,2.15,47.42[0m
+[0;32mI (185482) TX: Datos enviados[0m
+[0;33mW (190355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (190372) RTC: 27/10/2026 14:54:10[0m
+[0;32mI (190373) TX: Trama: 2026-10-27 14:54:10,-127.00,148.45,14.00,2.15,46.13[0m
+[0;32mI (190482) TX: Datos enviados[0m
+[0;33mW (195355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (195372) RTC: 27/10/2026 14:54:15[0m
+[0;32mI (195373) TX: Trama: 2026-10-27 14:54:15,-127.00,149.89,14.00,2.18,47.42[0m
+[0;32mI (195482) TX: Datos enviados[0m
+[0;33mW (200355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (200372) RTC: 27/10/2026 14:54:20[0m
+[0;32mI (200373) TX: Trama: 2026-10-27 14:54:20,-127.00,149.89,14.00,2.15,48.39[0m
+[0;32mI (200482) TX: Datos enviados[0m
+[0;33mW (205355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (205372) RTC: 27/10/2026 14:54:25[0m
+[0;32mI (205373) TX: Trama: 2026-10-27 14:54:25,-127.00,147.73,14.00,2.15,49.03[0m
+[0;32mI (205482) TX: Datos enviados[0m
+[0;33mW (210355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (210372) RTC: 27/10/2026 14:54:30[0m
+[0;32mI (210373) TX: Trama: 2026-10-27 14:54:30,-127.00,144.48,14.00,2.15,48.06[0m
+[0;32mI (210482) TX: Datos enviados[0m
+[0;33mW (215355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (215372) RTC: 27/10/2026 14:54:35[0m
+[0;32mI (215373) TX: Trama: 2026-10-27 14:54:35,-127.00,142.67,14.00,2.15,49.03[0m
+[0;32mI (215482) TX: Datos enviados[0m
+[0;33mW (220355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (220372) RTC: 27/10/2026 14:54:40[0m
+[0;32mI (220373) TX: Trama: 2026-10-27 14:54:40,-127.00,137.60,14.00,2.14,48.71[0m
+[0;32mI (220482) TX: Datos enviados[0m
+[0;33mW (225355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (225372) RTC: 27/10/2026 14:54:45[0m
+[0;32mI (225373) TX: Trama: 2026-10-27 14:54:45,-127.00,136.50,14.00,2.14,46.45[0m
+[0;32mI (225482) TX: Datos enviados[0m
+[0;33mW (230355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (230372) RTC: 27/10/2026 14:54:50[0m
+[0;32mI (230373) TX: Trama: 2026-10-27 14:54:50,-127.00,137.60,14.00,2.14,46.77[0m
+[0;32mI (230482) TX: Datos enviados[0m
+[0;33mW (235355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (235372) RTC: 27/10/2026 14:54:55[0m
+[0;32mI (235373) TX: Trama: 2026-10-27 14:54:55,-127.00,138.69,14.00,2.15,49.03[0m
+[0;32mI (235482) TX: Datos enviados[0m
+[0;33mW (240355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (240372) RTC: 27/10/2026 14:55:00[0m
+[0;32mI (240373) TX: Trama: 2026-10-27 14:55:00,-127.00,137.96,14.00,2.15,46.77[0m
+[0;32mI (240482) TX: Datos enviados[0m
+[0;33mW (245355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (245372) RTC: 27/10/2026 14:55:05[0m
+[0;32mI (245373) TX: Trama: 2026-10-27 14:55:05,-127.00,138.69,14.00,2.18,48.71[0m
+[0;32mI (245482) TX: Datos enviados[0m
+[0;33mW (250355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (250372) RTC: 27/10/2026 14:55:10[0m
+[0;32mI (250373) TX: Trama: 2026-10-27 14:55:10,-127.00,138.32,14.00,2.14,48.06[0m
+[0;32mI (250482) TX: Datos enviados[0m
+[0;33mW (255355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (255372) RTC: 27/10/2026 14:55:15[0m
+[0;32mI (255373) TX: Trama: 2026-10-27 14:55:15,-127.00,138.69,14.00,2.17,49.03[0m
+[0;32mI (255482) TX: Datos enviados[0m
+[0;33mW (260355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (260372) RTC: 27/10/2026 14:55:20[0m
+[0;32mI (260373) TX: Trama: 2026-10-27 14:55:20,-127.00,139.41,14.00,2.17,48.39[0m
+[0;32mI (260482) TX: Datos enviados[0m
+[0;33mW (265355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (265372) RTC: 27/10/2026 14:55:25[0m
+[0;32mI (265373) TX: Trama: 2026-10-27 14:55:25,-127.00,138.32,14.00,2.17,48.39[0m
+[0;32mI (265482) TX: Datos enviados[0m
+[0;33mW (270355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (270372) RTC: 27/10/2026 14:55:30[0m
+[0;32mI (270373) TX: Trama: 2026-10-27 14:55:30,-127.00,139.41,14.00,2.18,47.42[0m
+[0;32mI (270482) TX: Datos enviados[0m
+[0;33mW (275355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (275372) RTC: 27/10/2026 14:55:35[0m
+[0;32mI (275373) TX: Trama: 2026-10-27 14:55:35,-127.00,139.41,14.00,2.17,46.45[0m
+[0;32mI (275482) TX: Datos enviados[0m
+[0;33mW (280355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (280372) RTC: 27/10/2026 14:55:40[0m
+[0;32mI (280373) TX: Trama: 2026-10-27 14:55:40,-127.00,140.86,14.00,2.17,46.45[0m
+[0;32mI (280482) TX: Datos enviados[0m
+[0;33mW (285355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (285372) RTC: 27/10/2026 14:55:45[0m
+[0;32mI (285373) TX: Trama: 2026-10-27 14:55:45,-127.00,140.86,14.00,2.15,48.39[0m
+[0;32mI (285482) TX: Datos enviados[0m
+[0;33mW (290355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (290372) RTC: 27/10/2026 14:55:50[0m
+[0;32mI (290373) TX: Trama: 2026-10-27 14:55:50,-127.00,139.41,14.00,2.17,46.77[0m
+[0;32mI (290482) TX: Datos enviados[0m
+[0;33mW (295355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (295372) RTC: 27/10/2026 14:55:55[0m
+[0;32mI (295373) TX: Trama: 2026-10-27 14:55:55,-127.00,138.69,14.00,2.18,46.13[0m
+[0;32mI (295482) TX: Datos enviados[0m
+[0;33mW (300355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (300372) RTC: 27/10/2026 14:56:00[0m
+[0;32mI (300373) TX: Trama: 2026-10-27 14:56:00,-127.00,139.77,14.00,2.19,49.35[0m
+[0;32mI (300482) TX: Datos enviados[0m
+[0;33mW (305355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (305372) RTC: 27/10/2026 14:56:05[0m
+[0;32mI (305373) TX: Trama: 2026-10-27 14:56:05,-127.00,140.86,14.00,2.19,49.68[0m
+[0;32mI (305482) TX: Datos enviados[0m
+[0;33mW (310355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (310372) RTC: 27/10/2026 14:56:10[0m
+[0;32mI (310373) TX: Trama: 2026-10-27 14:56:10,-127.00,141.23,14.00,2.18,49.35[0m
+[0;32mI (310482) TX: Datos enviados[0m
+[0;33mW (315355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (315372) RTC: 27/10/2026 14:56:15[0m
+[0;32mI (315373) TX: Trama: 2026-10-27 14:56:15,-127.00,139.77,14.00,2.20,48.06[0m
+[0;32mI (315482) TX: Datos enviados[0m
+[0;33mW (320355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (320372) RTC: 27/10/2026 14:56:20[0m
+[0;32mI (320373) TX: Trama: 2026-10-27 14:56:20,-127.00,140.86,14.00,2.21,46.77[0m
+[0;32mI (320482) TX: Datos enviados[0m
+[0;33mW (325355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (325372) RTC: 27/10/2026 14:56:25[0m
+[0;32mI (325373) TX: Trama: 2026-10-27 14:56:25,-127.00,139.41,14.00,2.20,48.39[0m
+[0;32mI (325482) TX: Datos enviados[0m
+[0;33mW (330355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (330372) RTC: 27/10/2026 14:56:30[0m
+[0;32mI (330373) TX: Trama: 2026-10-27 14:56:30,-127.00,139.77,14.00,2.25,47.74[0m
+[0;32mI (330482) TX: Datos enviados[0m
+[0;33mW (335355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (335372) RTC: 27/10/2026 14:56:35[0m
+[0;32mI (335373) TX: Trama: 2026-10-27 14:56:35,-127.00,140.50,14.00,2.19,46.77[0m
+[0;32mI (335482) TX: Datos enviados[0m
+[0;33mW (340355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (340372) RTC: 27/10/2026 14:56:40[0m
+[0;32mI (340373) TX: Trama: 2026-10-27 14:56:40,-127.00,139.41,14.00,2.20,46.77[0m
+[0;32mI (340482) TX: Datos enviados[0m
+[0;33mW (345355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (345372) RTC: 27/10/2026 14:56:45[0m
+[0;32mI (345373) TX: Trama: 2026-10-27 14:56:45,-127.00,141.23,14.00,2.21,47.74[0m
+[0;32mI (345482) TX: Datos enviados[0m
+[0;33mW (350355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (350372) RTC: 27/10/2026 14:56:50[0m
+[0;32mI (350373) TX: Trama: 2026-10-27 14:56:50,-127.00,140.86,14.00,2.20,49.03[0m
+[0;32mI (350482) TX: Datos enviados[0m
+[0;33mW (355355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (355372) RTC: 27/10/2026 14:56:55[0m
+[0;32mI (355373) TX: Trama: 2026-10-27 14:56:55,-127.00,141.59,14.00,2.21,48.71[0m
+[0;32mI (355482) TX: Datos enviados[0m
+[0;33mW (360355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (360372) RTC: 27/10/2026 14:57:00[0m
+[0;32mI (360373) TX: Trama: 2026-10-27 14:57:00,-127.00,141.95,14.00,2.21,49.03[0m
+[0;32mI (360482) TX: Datos enviados[0m
+[0;33mW (365355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (365372) RTC: 27/10/2026 14:57:05[0m
+[0;32mI (365373) TX: Trama: 2026-10-27 14:57:05,-127.00,141.23,14.00,2.20,48.06[0m
+[0;32mI (365482) TX: Datos enviados[0m
+[0;33mW (370355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (370372) RTC: 27/10/2026 14:57:10[0m
+[0;32mI (370373) TX: Trama: 2026-10-27 14:57:10,-127.00,141.23,14.00,2.21,49.35[0m
+[0;32mI (370482) TX: Datos enviados[0m
+[0;33mW (375355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (375372) RTC: 27/10/2026 14:57:15[0m
+[0;32mI (375373) TX: Trama: 2026-10-27 14:57:15,-127.00,141.59,14.00,2.21,50.32[0m
+[0;32mI (375482) TX: Datos enviados[0m
+[0;33mW (380355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (380372) RTC: 27/10/2026 14:57:20[0m
+[0;32mI (380373) TX: Trama: 2026-10-27 14:57:20,-127.00,142.31,14.00,2.21,50.00[0m
+[0;32mI (380482) TX: Datos enviados[0m
+[0;33mW (385355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (385372) RTC: 27/10/2026 14:57:25[0m
+[0;32mI (385373) TX: Trama: 2026-10-27 14:57:25,-127.00,141.23,14.00,2.20,49.35[0m
+[0;32mI (385482) TX: Datos enviados[0m
+[0;33mW (390355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (390372) RTC: 27/10/2026 14:57:30[0m
+[0;32mI (390373) TX: Trama: 2026-10-27 14:57:30,-127.00,142.67,14.00,2.21,49.35[0m
+[0;32mI (390482) TX: Datos enviados[0m
+[0;33mW (395355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (395372) RTC: 27/10/2026 14:57:35[0m
+[0;32mI (395373) TX: Trama: 2026-10-27 14:57:35,-127.00,142.31,14.00,2.23,50.97[0m
+[0;32mI (395482) TX: Datos enviados[0m
+[0;33mW (400355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (400372) RTC: 27/10/2026 14:57:40[0m
+[0;32mI (400373) TX: Trama: 2026-10-27 14:57:40,-127.00,141.23,14.00,2.20,49.35[0m
+[0;32mI (400482) TX: Datos enviados[0m
+[0;33mW (405355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (405372) RTC: 27/10/2026 14:57:45[0m
+[0;32mI (405373) TX: Trama: 2026-10-27 14:57:45,-127.00,142.31,14.00,2.21,50.65[0m
+[0;32mI (405482) TX: Datos enviados[0m
+[0;33mW (410355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (410372) RTC: 27/10/2026 14:57:50[0m
+[0;32mI (410373) TX: Trama: 2026-10-27 14:57:50,-127.00,142.67,14.00,2.23,49.68[0m
+[0;32mI (410482) TX: Datos enviados[0m
+[0;33mW (415355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (415372) RTC: 27/10/2026 14:57:55[0m
+[0;32mI (415373) TX: Trama: 2026-10-27 14:57:55,-127.00,142.31,14.00,2.22,50.32[0m
+[0;32mI (415482) TX: Datos enviados[0m
+[0;33mW (420355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (420372) RTC: 27/10/2026 14:58:00[0m
+[0;32mI (420373) TX: Trama: 2026-10-27 14:58:00,-127.00,141.23,14.00,2.22,46.77[0m
+[0;32mI (420482) TX: Datos enviados[0m
+[0;33mW (425355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (425372) RTC: 27/10/2026 14:58:05[0m
+[0;32mI (425373) TX: Trama: 2026-10-27 14:58:05,-127.00,142.31,14.00,2.23,49.03[0m
+[0;32mI (425482) TX: Datos enviados[0m
+[0;33mW (430355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (430372) RTC: 27/10/2026 14:58:10[0m
+[0;32mI (430373) TX: Trama: 2026-10-27 14:58:10,-127.00,143.40,14.00,2.21,49.03[0m
+[0;32mI (430482) TX: Datos enviados[0m
+[0;33mW (435355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (435372) RTC: 27/10/2026 14:58:15[0m
+[0;32mI (435373) TX: Trama: 2026-10-27 14:58:15,-127.00,142.67,14.00,2.23,48.71[0m
+[0;32mI (435482) TX: Datos enviados[0m
+[0;33mW (440355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (440372) RTC: 27/10/2026 14:58:20[0m
+[0;32mI (440373) TX: Trama: 2026-10-27 14:58:20,-127.00,142.67,14.00,2.22,48.06[0m
+[0;32mI (440482) TX: Datos enviados[0m
+[0;33mW (445355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (445372) RTC: 27/10/2026 14:58:25[0m
+[0;32mI (445373) TX: Trama: 2026-10-27 14:58:25,-127.00,141.95,14.00,2.23,48.39[0m
+[0;32mI (445482) TX: Datos enviados[0m
+[0;33mW (450355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (450372) RTC: 27/10/2026 14:58:30[0m
+[0;32mI (450373) TX: Trama: 2026-10-27 14:58:30,-127.00,141.95,14.00,2.22,48.71[0m
+[0;32mI (450482) TX: Datos enviados[0m
+[0;33mW (455355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (455372) RTC: 27/10/2026 14:58:35[0m
+[0;32mI (455373) TX: Trama: 2026-10-27 14:58:35,-127.00,143.40,14.00,2.24,49.03[0m
+[0;32mI (455482) TX: Datos enviados[0m
+[0;33mW (460355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (460372) RTC: 27/10/2026 14:58:40[0m
+[0;32mI (460373) TX: Trama: 2026-10-27 14:58:40,-127.00,143.40,14.00,2.25,48.71[0m
+[0;32mI (460482) TX: Datos enviados[0m
+[0;33mW (465355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (465372) RTC: 27/10/2026 14:58:45[0m
+[0;32mI (465373) TX: Trama: 2026-10-27 14:58:45,-127.00,142.67,14.00,2.24,48.71[0m
+[0;32mI (465482) TX: Datos enviados[0m
+[0;33mW (470355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (470372) RTC: 27/10/2026 14:58:50[0m
+[0;32mI (470373) TX: Trama: 2026-10-27 14:58:50,-127.00,144.12,14.00,2.23,48.39[0m
+[0;32mI (470482) TX: Datos enviados[0m
+[0;33mW (475355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (475372) RTC: 27/10/2026 14:58:55[0m
+[0;32mI (475373) TX: Trama: 2026-10-27 14:58:55,-127.00,143.40,14.00,2.22,50.00[0m
+[0;32mI (475482) TX: Datos enviados[0m
+[0;33mW (480355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (480372) RTC: 27/10/2026 14:59:00[0m
+[0;32mI (480373) TX: Trama: 2026-10-27 14:59:00,-127.00,143.40,14.00,2.23,49.03[0m
+[0;32mI (480482) TX: Datos enviados[0m
+[0;33mW (485355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (485372) RTC: 27/10/2026 14:59:05[0m
+[0;32mI (485373) TX: Trama: 2026-10-27 14:59:05,-127.00,144.12,14.00,2.25,48.71[0m
+[0;32mI (485482) TX: Datos enviados[0m
+[0;33mW (490355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (490372) RTC: 27/10/2026 14:59:10[0m
+[0;32mI (490373) TX: Trama: 2026-10-27 14:59:10,-127.00,144.12,14.00,2.24,49.03[0m
+[0;32mI (490482) TX: Datos enviados[0m
+[0;33mW (495355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (495372) RTC: 27/10/2026 14:59:15[0m
+[0;32mI (495373) TX: Trama: 2026-10-27 14:59:15,-127.00,144.12,14.00,2.25,48.71[0m
+[0;32mI (495482) TX: Datos enviados[0m
+[0;33mW (500355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (500372) RTC: 27/10/2026 14:59:20[0m
+[0;32mI (500373) TX: Trama: 2026-10-27 14:59:20,-127.00,143.40,14.00,2.24,49.68[0m
+[0;32mI (500482) TX: Datos enviados[0m
+[0;33mW (505355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (505372) RTC: 27/10/2026 14:59:25[0m
+[0;32mI (505373) TX: Trama: 2026-10-27 14:59:25,-127.00,143.76,14.00,2.24,48.06[0m
+[0;32mI (505482) TX: Datos enviados[0m
+[0;33mW (510355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (510372) RTC: 27/10/2026 14:59:30[0m
+[0;32mI (510373) TX: Trama: 2026-10-27 14:59:30,-127.00,144.48,14.00,2.25,48.06[0m
+[0;32mI (510482) TX: Datos enviados[0m
+[0;33mW (515355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (515372) RTC: 27/10/2026 14:59:35[0m
+[0;32mI (515373) TX: Trama: 2026-10-27 14:59:35,-127.00,143.76,14.00,2.25,50.00[0m
+[0;32mI (515482) TX: Datos enviados[0m
+[0;33mW (520355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (520372) RTC: 27/10/2026 14:59:40[0m
+[0;32mI (520373) TX: Trama: 2026-10-27 14:59:40,-127.00,144.84,14.00,2.25,49.68[0m
+[0;32mI (520482) TX: Datos enviados[0m
+[0;33mW (525355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (525372) RTC: 27/10/2026 14:59:45[0m
+[0;32mI (525373) TX: Trama: 2026-10-27 14:59:45,-127.00,144.12,14.00,2.25,49.35[0m
+[0;32mI (525482) TX: Datos enviados[0m
+[0;33mW (530355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (530372) RTC: 27/10/2026 14:59:50[0m
+[0;32mI (530373) TX: Trama: 2026-10-27 14:59:50,-127.00,144.84,14.00,2.25,48.71[0m
+[0;32mI (530482) TX: Datos enviados[0m
+[0;33mW (535355) ds18b20: Sin presencia en el bus 1-Wire (revisar cable

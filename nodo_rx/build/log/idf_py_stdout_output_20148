@@ -1,0 +1,2395 @@
+Command: C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:\esp\v5.5.3\esp-idf\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\ayele\OneDrive\Escritorio\biosense\biosense\nodo_rx\build\biosense_rx.elf C:\Users\ayele\OneDrive\Escritorio\biosense\biosense\nodo_rx\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe' 'C:\esp\v5.5.3\esp-idf\tools\idf.py' '-p' 'COM5'
+MA%�Mode       : DIO
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage   �ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2ef0
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Oct 27 2026 13:17:55[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.1[0m
+[0;32mI (28) boot: efuse block revision: v1.2[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=23a14h (145940) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033a3c vaddr=3fc9ce00 size=051b8h ( 20920) load[0m
+[0;32mI (117) esp_image: segment 2: paddr=00038bfc vaddr=40374000 size=0741ch ( 29724) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=ad9c4h (711108) map[0m
+[0;32mI (249) esp_image: segment 4: paddr=000ed9ec vaddr=4037b41c size=1199ch ( 72092) load[0m
+[0;32mI (265) esp_image: segment 5: paddr=000ff390 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (275) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (275) boot: Disabling RNG early entropy source...[0m
+[0;32mI (285) cpu_start: Multicore app[0m
+[0;32mI (294) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (295) cpu_start: Pro cpu start user code[0m
+[0;32mI (295) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (296) app_init: Application information:[0m
+[0;32mI (300) app_init: Project name:     biosense_rx[0m
+[0;32mI (304) app_init: App version:      a81e515-dirty[0m
+[0;32mI (309) app_init: Compile time:     Oct 27 2026 13:15:31[0m
+[0;32mI (314) app_init: ELF file SHA256:  55bfc6261...[0m
+[0;32mI (318) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (322) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (326) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (330) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (334) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FCA6370 len 000433A0 (268 KiB): RAM[0m
+[0;32mI (345) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (350) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (355) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (362) spi_flash: detected chip: gd[0m
+[0;32mI (364) spi_flash: flash io: dio[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (411) main_task: Calling app_main()[0m
+[0;32mI (411) RX: BIOSENSE - Nodo receptor LoRa -> WiFi/MQTT -> Raspberry[0m
+[0;32mI (475) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[1;31mE (597) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[1;31mE (598) sd: No se pudo montar la SD (ESP_ERR_TIMEOUT). Verifica cableado y que este en FAT32.[0m
+[0;33mW (600) RX: Sin SD: se sigue enviando por WiFi sin respaldo local[0m
+[0;32mI (633) pp: pp rom version: e7ae62f[0m
+[0;32mI (633) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (635) wifi:wifi driver task: 3fcedda8, prio:23, stack:6656, core=0[0m
+[0;32mI (649) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (650) wifi:wifi certification version: v7.0[0m
+[0;32mI (650) wifi:config NVS flash: enabled[0m
+[0;32mI (650) wifi:config nano formatting: disabled[0m
+[0;32mI (654) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (659) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (663) wifi:Init management short buffer num: 32[0m
+[0;32mI (667) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (671) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (675) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (679) wifi:Init static rx buffer num: 10[0m
+[0;32mI (683) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (688) wifi_init: rx ba win: 6[0m
+[0;32mI (690) wifi_init: accept mbox: 6[0m
+[0;32mI (693) wifi_init: tcpip mbox: 32[0m
+[0;32mI (696) wifi_init: udp mbox: 6[0m
+[0;32mI (699) wifi_init: tcp mbox: 6[0m
+[0;32mI (702) wifi_init: tcp tx win: 5760[0m
+[0;32mI (705) wifi_init: tcp rx win: 5760[0m
+[0;32mI (708) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (714) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (720) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (762) wifi:mode : sta (f4:12:fa:9f:ff:ec)[0m
+[0;32mI (763) wifi:enable tsf[0m
+[0;32mI (765) wifi: Conectando a la red 'BioSense'...[0m
+[1;31mE (769) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (769) RX: Esperando lecturas de sensores por LoRa...[0m
+[1;31mE (770) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (770) main_task: Returned from app_main()[0m
+[1;31mE (778) mqtt_client: Error transport connect[0m
+[0;33mW (786) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (792) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (3176) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (5587) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (7998) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (10409) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (10798) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (10799) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (10799) mqtt_client: Error transport connect[0m
+[0;33mW (10803) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (10809) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (12821) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (15232) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (17643) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (20054) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (20815) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (20816) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (20816) mqtt_client: Error transport connect[0m
+[0;33mW (20820) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (20826) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (22466) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (24877) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (27288) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (29699) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (30832) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (30833) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (30833) mqtt_client: Error transport connect[0m
+[0;33mW (30837) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (30843) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (32110) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (34521) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (36932) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (39343) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (40849) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (40850) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (40850) mqtt_client: Error transport connect[0m
+[0;33mW (40854) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (40860) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (41755) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (44166) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (46577) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (48988) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (50866) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (50867) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (50867) mqtt_client: Error transport connect[0m
+[0;33mW (50871) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (50877) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (51399) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (53810) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (56221) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (58632) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (60883) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (60884) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (60884) mqtt_client: Error transport connect[0m
+[0;33mW (60888) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (60894) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (61043) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (63454) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (65865) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (68276) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (70688) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (70900) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (70901) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (70901) mqtt_client: Error transport connect[0m
+[0;33mW (70905) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (70911) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (73099) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (75510) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (77922) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (80333) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (80917) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (80918) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (80918) mqtt_client: Error transport connect[0m
+[0;33mW (80922) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (80928) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (82744) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (85155) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (87566) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (89977) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (90934) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (90935) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (90935) mqtt_client: Error transport connect[0m
+[0;33mW (90939) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (90945) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (92388) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (94799) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (97210) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (99622) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (100951) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (100952) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (100952) mqtt_client: Error transport connect[0m
+[0;33mW (100957) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (100963) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (102033) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (104444) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (106855) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (109266) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (110969) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (110970) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (110970) mqtt_client: Error transport connect[0m
+[0;33mW (110974) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (110980) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (111678) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (114089) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (116500) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (118911) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (120987) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (120988) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (120988) mqtt_client: Error transport connect[0m
+[0;33mW (120992) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (120998) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (121322) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (123734) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (126145) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (128555) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (130967) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (131005) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (131006) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (131006) mqtt_client: Error transport connect[0m
+[0;33mW (131010) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (131016) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (133378) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (135789) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (138200) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (140611) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (141023) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (141024) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (141024) mqtt_client: Error transport connect[0m
+[0;33mW (141028) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (141034) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (143023) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (145434) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (147845) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (150256) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (151041) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (151042) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (151042) mqtt_client: Error transport connect[0m
+[0;33mW (151046) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (151052) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (152668) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (155079) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (157490) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (159901) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (161059) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (161060) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (161060) mqtt_client: Error transport connect[0m
+[0;33mW (161064) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (161070) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (162312) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (164724) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (167135) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (169546) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (171077) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (171078) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (171078) mqtt_client: Error transport connect[0m
+[0;33mW (171082) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (171088) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (171957) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (174368) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (176779) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (179190) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (181095) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (181096) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (181096) mqtt_client: Error transport connect[0m
+[0;33mW (181100) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (181106) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (181602) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (184013) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (186424) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (188835) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (191113) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (191114) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (191114) mqtt_client: Error transport connect[0m
+[0;33mW (191118) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (191124) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (191247) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (193657) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (196068) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (198479) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (200890) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (201131) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (201132) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (201132) mqtt_client: Error transport connect[0m
+[0;33mW (201137) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (201143) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (203302) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (205713) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (208124) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (210535) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (211149) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (211150) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (211150) mqtt_client: Error transport connect[0m
+[0;33mW (211154) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (211160) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (212946) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (215358) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (217769) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (220180) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (221167) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (221168) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (221168) mqtt_client: Error transport connect[0m
+[0;33mW (221172) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (221178) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (222591) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (225002) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (227413) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (229824) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (231185) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (231186) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (231186) mqtt_client: Error transport connect[0m
+[0;33mW (231190) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (231196) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (232236) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (234647) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (237058) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (239469) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (241203) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (241204) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (241204) mqtt_client: Error transport connect[0m
+[0;33mW (241208) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (241214) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (241880) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (244291) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (246702) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (249113) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (251221) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (251222) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (251222) mqtt_client: Error transport connect[0m
+[0;33mW (251226) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (251232) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (251525) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (253936) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (256347) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (258758) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (261169) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (261239) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (261240) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (261240) mqtt_client: Error transport connect[0m
+[0;33mW (261244) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (261250) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (263580) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (265991) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (268402) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (270813) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (271257) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (271258) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (271258) mqtt_client: Error transport connect[0m
+[0;33mW (271262) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (271268) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (273225) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (275636) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (278047) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (280458) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (281275) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (281276) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (281276) mqtt_client: Error transport connect[0m
+[0;33mW (281280) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (281286) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (282869) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (285280) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (287691) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (290102) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (291293) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (291294) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (291294) mqtt_client: Error transport connect[0m
+[0;33mW (291298) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (291304) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (292513) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (294925) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (297336) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (299747) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (301311) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (301312) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (301312) mqtt_client: Error transport connect[0m
+[0;33mW (301316) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (301322) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (302158) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (304569) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (306980) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (309391) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (311329) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (311330) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (311330) mqtt_client: Error transport connect[0m
+[0;33mW (311334) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (311340) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (311803) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (314214) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (316625) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (319036) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (321347) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (321348) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (321348) mqtt_client: Error transport connect[0m
+[0;33mW (321352) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (321358) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (321448) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (323859) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (326270) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (328681) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (331092) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (331365) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (331366) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (331366) mqtt_client: Error transport connect[0m
+[0;33mW (331370) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (331376) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (333504) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (335915) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (337516) RX: LoRa -> 2000-01-01 01:10:43,-127.00,165.99,14.00,2.43,102.58 | RSSI -23 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (338326) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (338645) RX: LoRa -> 2000-01-01 01:10:44,-127.00,164.92,14.00,2.41,101.29 | RSSI -23 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (340738) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (341383) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (341384) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (341384) mqtt_client: Error transport connect[0m
+[0;33mW (341388) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (341394) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (343149) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (343642) RX: LoRa -> 2000-01-01 01:10:49,-127.00,169.19,14.00,2.52,52.90 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (345560) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (347971) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (348642) RX: LoRa -> 2000-01-01 01:10:54,-127.00,167.77,14.00,2.49,54.84 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (350382) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (351401) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (351402) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (351402) mqtt_client: Error transport connect[0m
+[0;33mW (351406) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (351412) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (352794) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (353642) RX: LoRa -> 2000-01-01 01:10:59,-127.00,165.28,14.00,2.48,53.23 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (355205) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (357616) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (358641) RX: LoRa -> 2000-01-01 01:11:04,-127.00,164.92,14.00,2.46,51.61 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (360028) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (361419) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (361420) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (361420) mqtt_client: Error transport connect[0m
+[0;33mW (361424) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (361430) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (362439) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (363641) RX: LoRa -> 2000-01-01 01:11:09,-127.00,164.57,14.00,2.45,51.94 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (364851) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (367262) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (368641) RX: LoRa -> 2000-01-01 01:11:14,-127.00,162.43,14.00,2.41,50.97 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (369673) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (371437) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (371438) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (371438) mqtt_client: Error transport connect[0m
+[0;33mW (371442) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (371448) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (372084) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (373641) RX: LoRa -> 2000-01-01 01:11:19,-127.00,160.29,14.00,2.40,51.29 | RSSI -23 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (374496) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (376907) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (378640) RX: LoRa -> 2000-01-01 01:11:24,-127.00,163.50,14.00,2.41,51.61 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (379318) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (381455) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (381456) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (381456) mqtt_client: Error transport connect[0m
+[0;33mW (381460) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (381466) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (381730) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (383640) RX: LoRa -> 2000-01-01 01:11:29,-127.00,159.93,14.00,2.39,51.94 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (384141) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (386552) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (388640) RX: LoRa -> 2000-01-01 01:11:34,-127.00,157.43,14.00,2.39,51.94 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (388963) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (391374) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (391473) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (391474) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (391474) mqtt_client: Error transport connect[0m
+[0;33mW (391478) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (391484) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (393640) RX: LoRa -> 2000-01-01 01:11:39,-127.00,156.00,14.00,2.38,51.29 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (393786) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (396197) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (398609) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (398640) RX: LoRa -> 2000-01-01 01:11:44,-127.00,155.64,14.00,2.35,51.29 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (401020) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (401491) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (401492) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (401492) mqtt_client: Error transport connect[0m
+[0;33mW (401496) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (401502) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (403431) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (403640) RX: LoRa -> 2000-01-01 01:11:49,-127.00,156.00,14.00,2.35,51.29 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (405843) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (408254) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (408639) RX: LoRa -> 2000-01-01 01:11:54,-127.00,153.13,14.00,2.34,51.61 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (410666) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (411509) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (411510) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (411510) mqtt_client: Error transport connect[0m
+[0;33mW (411514) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (411520) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (413077) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (413639) RX: LoRa -> 2000-01-01 01:11:59,-127.00,152.05,14.00,2.34,51.29 | RSSI -35 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (415488) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (417899) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (418639) RX: LoRa -> 2000-01-01 01:12:04,-127.00,155.28,14.00,2.33,51.29 | RSSI -23 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (420310) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (421527) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (421528) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (421528) mqtt_client: Error transport connect[0m
+[0;33mW (421532) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (421538) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (422722) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (423639) RX: LoRa -> 2000-01-01 01:12:09,-127.00,152.77,14.00,2.32,48.39 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (425133) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (427544) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (428639) RX: LoRa -> 2000-01-01 01:12:14,-127.00,153.49,14.00,2.33,49.03 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (429955) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (431545) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (431546) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (431546) mqtt_client: Error transport connect[0m
+[0;33mW (431550) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (431556) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (432367) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (433639) RX: LoRa -> 2000-01-01 01:12:19,-127.00,155.28,14.00,2.32,50.65 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (434778) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (437188) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (438638) RX: LoRa -> 2000-01-01 01:12:24,-127.00,155.64,14.00,2.30,50.97 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (439600) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (441563) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (441564) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (441564) mqtt_client: Error transport connect[0m
+[0;33mW (441568) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (441574) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (442011) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (443638) RX: LoRa -> 2000-01-01 01:12:29,-127.00,154.56,14.00,2.28,49.35 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (444422) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (446833) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (448638) RX: LoRa -> 2000-01-01 01:12:34,-127.00,153.84,14.00,2.29,49.68 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (449245) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (451581) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (451582) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (451582) mqtt_client: Error transport connect[0m
+[0;33mW (451586) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (451592) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (451656) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (453638) RX: LoRa -> 2000-01-01 01:12:39,-127.00,155.28,14.00,2.28,48.71 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (454067) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (456478) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (458638) RX: LoRa -> 2000-01-01 01:12:44,-127.00,155.28,14.00,2.27,46.77 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (458890) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (461301) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (461599) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (461600) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (461600) mqtt_client: Error transport connect[0m
+[0;33mW (461604) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (461610) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (463638) RX: LoRa -> 2000-01-01 01:12:49,-127.00,156.00,14.00,2.27,48.06 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (463712) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (466123) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (468534) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (470946) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (471617) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (471618) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (471618) mqtt_client: Error transport connect[0m
+[0;33mW (471622) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (471628) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (473357) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (475768) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (478179) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (480590) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (481382) RX: LoRa -> 2000-01-01 01:13:07,-127.00,159.93,14.00,2.28,96.13 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (481635) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (481636) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (481636) mqtt_client: Error transport connect[0m
+[0;33mW (481640) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (481646) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (483002) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (485413) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (486380) RX: LoRa -> 2000-01-01 01:13:12,-127.00,159.93,14.00,2.32,51.61 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (487824) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (487954) RX: LoRa -> 2000-01-01 01:13:13,-127.00,157.07,14.00,2.21,90.65 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (490236) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (491653) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (491654) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (491654) mqtt_client: Error transport connect[0m
+[0;33mW (491658) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (491664) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (492647) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (492951) RX: LoRa -> 2000-01-01 01:13:18,-127.00,160.64,14.00,2.28,49.35 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (495059) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (497470) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (497951) RX: LoRa -> 2000-01-01 01:13:23,-127.00,159.93,14.00,2.28,49.35 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (499882) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (501671) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (501672) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (501672) mqtt_client: Error transport connect[0m
+[0;33mW (501676) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (501682) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (502293) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (502951) RX: LoRa -> 2000-01-01 01:13:28,-127.00,158.86,14.00,2.28,49.68 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (504704) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (507115) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (507951) RX: LoRa -> 2000-01-01 01:13:33,-127.00,158.50,14.00,2.25,49.68 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (509527) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (511689) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (511690) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (511690) mqtt_client: Error transport connect[0m
+[0;33mW (511694) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (511700) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (511938) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (512951) RX: LoRa -> 2000-01-01 01:13:38,-127.00,157.78,14.00,2.26,49.35 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (514349) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (516761) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (517950) RX: LoRa -> 2000-01-01 01:13:43,-127.00,156.00,14.00,2.26,48.71 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (519172) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (521583) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (521707) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (521708) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (521708) mqtt_client: Error transport connect[0m
+[0;33mW (521712) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (521718) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (522950) RX: LoRa -> 2000-01-01 01:13:48,-127.00,156.35,14.00,2.26,48.71 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (523994) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (526405) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (527950) RX: LoRa -> 2000-01-01 01:13:53,-127.00,156.71,14.00,2.26,48.71 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (528817) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (531228) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (531725) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (531726) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (531726) mqtt_client: Error transport connect[0m
+[0;33mW (531730) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (531736) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (532950) RX: LoRa -> 2000-01-01 01:13:58,-127.00,155.28,14.00,2.25,48.71 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (533640) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (536051) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (537950) RX: LoRa -> 2000-01-01 01:14:03,-127.00,155.28,14.00,2.24,48.06 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (538463) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (540874) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (541743) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (541744) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (541744) mqtt_client: Error transport connect[0m
+[0;33mW (541748) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (541754) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (542950) RX: LoRa -> 2000-01-01 01:14:08,-127.00,154.56,14.00,2.24,47.74 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (543285) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (545696) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (547949) RX: LoRa -> 2000-01-01 01:14:13,-127.00,156.00,14.00,2.24,50.00 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (548108) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (550519) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (551761) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (551762) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (551762) mqtt_client: Error transport connect[0m
+[0;33mW (551766) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (551772) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (552930) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (552949) RX: LoRa -> 2000-01-01 01:14:18,-127.00,153.84,14.00,2.23,49.03 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (555341) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (557752) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (557949) RX: LoRa -> 2000-01-01 01:14:23,-127.00,154.56,14.00,2.24,49.03 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (560163) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (561779) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (561780) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (561780) mqtt_client: Error transport connect[0m
+[0;33mW (561784) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (561790) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (562575) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (562949) RX: LoRa -> 2000-01-01 01:14:28,-127.00,153.49,14.00,2.23,49.35 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (564986) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (567397) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (567949) RX: LoRa -> 2000-01-01 01:14:33,-127.00,153.49,14.00,2.23,47.74 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (569808) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (571797) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (571798) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (571798) mqtt_client: Error transport connect[0m
+[0;33mW (571802) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (571808) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (572220) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (572949) RX: LoRa -> 2000-01-01 01:14:38,-127.00,152.77,14.00,2.23,48.71 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (574631) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (577042) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (577948) RX: LoRa -> 2000-01-01 01:14:43,-127.00,153.49,14.00,2.21,46.45 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (579453) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (581815) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (581816) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (581816) mqtt_client: Error transport connect[0m
+[0;33mW (581820) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (581826) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (581865) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (582948) RX: LoRa -> 2000-01-01 01:14:48,-127.00,152.05,14.00,2.20,48.06 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (584276) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (586687) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (587948) RX: LoRa -> 2000-01-01 01:14:53,-127.00,152.05,14.00,2.21,49.03 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (589098) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (591509) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (591833) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (591834) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (591834) mqtt_client: Error transport connect[0m
+[0;33mW (591838) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (591844) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (592948) RX: LoRa -> 2000-01-01 01:14:58,-127.00,151.33,14.00,2.20,48.39 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (593921) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (596332) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (597948) RX: LoRa -> 2000-01-01 01:15:03,-127.00,149.89,14.00,2.20,49.35 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (598744) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (601155) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (601851) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (601852) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (601852) mqtt_client: Error transport connect[0m
+[0;33mW (601856) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (601862) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (602948) RX: LoRa -> 2000-01-01 01:15:08,-127.00,150.25,14.00,2.19,48.71 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (603566) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (605977) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (607947) RX: LoRa -> 2000-01-01 01:15:13,-127.00,149.53,14.00,2.20,50.97 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (608389) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (610800) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (611869) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (611870) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (611870) mqtt_client: Error transport connect[0m
+[0;33mW (611874) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (611880) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (612947) RX: LoRa -> 2000-01-01 01:15:18,-127.00,147.73,14.00,2.19,49.35 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (613212) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (615622) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (617947) RX: LoRa -> 2000-01-01 01:15:23,-127.00,147.37,14.00,2.20,48.06 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (618034) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (620445) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (621887) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (621888) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (621888) mqtt_client: Error transport connect[0m
+[0;33mW (621892) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (621898) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (622857) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (622947) RX: LoRa -> 2000-01-01 01:15:28,-127.00,148.81,14.00,2.20,49.35 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (625268) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (627679) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (627947) RX: LoRa -> 2000-01-01 01:15:33,-127.00,149.17,14.00,2.20,48.39 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (630090) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (631905) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (631906) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (631906) mqtt_client: Error transport connect[0m
+[0;33mW (631910) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (631916) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (632502) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (632947) RX: LoRa -> 2000-01-01 01:15:38,-127.00,148.81,14.00,2.18,48.71 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (634913) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (637324) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (637946) RX: LoRa -> 2000-01-01 01:15:43,-127.00,148.09,14.00,2.25,46.77 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (639735) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (641923) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (641924) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (641924) mqtt_client: Error transport connect[0m
+[0;33mW (641928) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (641934) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (642147) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (642946) RX: LoRa -> 2000-01-01 01:15:48,-127.00,145.93,14.00,2.17,46.77 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (644558) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (646969) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (647946) RX: LoRa -> 2000-01-01 01:15:53,-127.00,146.29,14.00,2.17,46.77 | RSSI -26 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (649380) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (651792) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (651941) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (651942) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (651942) mqtt_client: Error transport connect[0m
+[0;33mW (651946) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (651952) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (652946) RX: LoRa -> 2000-01-01 01:15:58,-127.00,147.01,14.00,2.17,47.42 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (654203) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (656614) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (657946) RX: LoRa -> 2000-01-01 01:16:03,-127.00,147.37,14.00,2.14,46.77 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (659026) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (661437) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (661959) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (661960) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (661960) mqtt_client: Error transport connect[0m
+[0;33mW (661964) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (661970) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (662946) RX: LoRa -> 2000-01-01 01:16:08,-127.00,149.89,14.00,2.18,48.06 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (663849) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (666260) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (667945) RX: LoRa -> 2000-01-01 01:16:13,-127.00,148.45,14.00,2.17,46.77 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (668671) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (671082) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (671977) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (671978) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (671978) mqtt_client: Error transport connect[0m
+[0;33mW (671982) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (671988) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (672945) RX: LoRa -> 2000-01-01 01:16:18,-127.00,147.73,14.00,2.17,46.45 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (673494) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (675905) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (677945) RX: LoRa -> 2000-01-01 01:16:23,-127.00,145.57,14.00,2.15,46.77 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (678317) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (680728) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (681995) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (681996) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (681996) mqtt_client: Error transport connect[0m
+[0;33mW (682000) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (682006) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (682945) RX: LoRa -> 2000-01-01 01:16:28,-127.00,145.93,14.00,2.15,46.77 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (683139) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (685550) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (687945) RX: LoRa -> 2000-01-01 01:16:33,-127.00,145.57,14.00,2.15,48.71 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (687962) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (690373) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (692013) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (692014) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (692014) mqtt_client: Error transport connect[0m
+[0;33mW (692018) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (692024) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (692784) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (692945) RX: LoRa -> 2000-01-01 01:16:38,-127.00,147.01,14.00,2.17,48.06 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (695196) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (697607) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (697944) RX: LoRa -> 2000-01-01 01:16:43,-127.00,145.57,14.00,2.15,46.13 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (700018) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (702031) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (702032) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (702032) mqtt_client: Error transport connect[0m
+[0;33mW (702036) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (702042) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (702430) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (702944) RX: LoRa -> 2000-01-01 01:16:48,-127.00,144.48,14.00,2.15,48.39 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (704841) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (707252) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (707944) RX: LoRa -> 2000-01-01 01:16:53,-127.00,144.84,14.00,2.15,46.77 | RSSI -29 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (709664) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (712049) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (712050) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (712050) mqtt_client: Error transport connect[0m
+[0;33mW (712054) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (712060) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (712075) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (712944) RX: LoRa -> 2000-01-01 01:16:58,-127.00,143.76,14.00,2.15,47.42 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (714487) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (716898) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (717944) RX: LoRa -> 2000-01-01 01:17:03,-127.00,144.48,14.00,2.15,46.45 | RSSI -28 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (719309) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (721720) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (722067) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (722068) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (722068) mqtt_client: Error transport connect[0m
+[0;33mW (722072) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (722078) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (722944) RX: LoRa -> 2000-01-01 01:17:08,-127.00,147.37,14.00,2.15,48.06 | RSSI -31 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (724132) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (726543) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (727943) RX: LoRa -> 2000-01-01 01:17:13,-127.00,136.50,14.00,2.15,48.39 | RSSI -27 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (728955) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (731366) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (732085) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (732086) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (732086) mqtt_client: Error transport connect[0m
+[0;33mW (732090) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (732096) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (732943) RX: LoRa -> 2000-01-01 01:17:18,-127.00,139.05,14.00,2.15,47.42 | RSSI -32 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (733778) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (736189) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (737943) RX: LoRa -> 2000-01-01 01:17:23,-127.00,141.23,14.00,2.14,47.74 | RSSI -33 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (738601) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (741012) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (741675) RX: LoRa -> 2000-01-01 01:17:27,-127.00,143.40,14.00,2.03,84.19 | RSSI -32 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (742103) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (742104) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (742104) mqtt_client: Error transport connect[0m
+[0;33mW (742109) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (742114) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (743423) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (745834) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (746672) RX: LoRa -> 2000-01-01 01:17:32,-127.00,144.48,14.00,2.13,48.71 | RSSI -34 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (748246) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (750657) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (751672) RX: LoRa -> 2000-01-01 01:17:37,-127.00,145.93,14.00,2.15,46.77 | RSSI -36 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (752121) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (752122) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (752122) mqtt_client: Error transport connect[0m
+[0;33mW (752126) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (752132) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (753068) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (755479) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (756672) RX: LoRa -> 2000-01-01 01:17:42,-127.00,146.29,14.00,2.15,49.03 | RSSI -35 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (757891) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (760302) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (761672) RX: LoRa -> 2000-01-01 01:17:47,-127.00,147.37,14.00,2.14,48.39 | RSSI -36 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (762139) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (762140) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (762140) mqtt_client: Error transport connect[0m
+[0;33mW (762144) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (762150) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (762714) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (765125) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (766672) RX: LoRa -> 2000-01-01 01:17:52,-127.00,146.29,14.00,2.19,46.77 | RSSI -37 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (767536) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (769947) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (771671) RX: LoRa -> 2000-01-01 01:17:57,-127.00,147.73,14.00,2.12,46.77 | RSSI -53 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (772157) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (772158) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (772158) mqtt_client: Error transport connect[0m
+[0;33mW (772162) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (772168) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (772359) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (774770) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (776671) RX: LoRa -> 2000-01-01 01:18:02,-127.00,147.37,14.00,2.14,46.77 | RSSI -41 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (777182) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (779593) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (781671) RX: LoRa -> 2000-01-01 01:18:07,-127.00,146.65,14.00,2.12,48.06 | RSSI -41 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (782004) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (782175) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (782176) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (782176) mqtt_client: Error transport connect[0m
+[0;33mW (782180) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (782186) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (784415) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (786671) RX: LoRa -> 2000-01-01 01:18:12,-127.00,145.93,14.00,2.12,46.77 | RSSI -41 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (786827) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (789238) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (791649) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (791671) RX: LoRa -> 2000-01-01 01:18:17,-127.00,145.57,14.00,2.10,44.84 | RSSI -39 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (792193) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (792194) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (792194) mqtt_client: Error transport connect[0m
+[0;33mW (792198) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (792204) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (794061) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (796472) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (796671) RX: LoRa -> 2000-01-01 01:18:22,-127.00,145.93,14.00,2.12,46.13 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (798883) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (801294) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (801670) RX: LoRa -> 2000-01-01 01:18:27,-127.00,146.65,14.00,2.12,46.77 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (802211) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (802212) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (802212) mqtt_client: Error transport connect[0m
+[0;33mW (802216) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (802222) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (803706) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (806117) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (806670) RX: LoRa -> 2000-01-01 01:18:32,-127.00,146.29,14.00,2.12,46.77 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (808528) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (810939) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (811670) RX: LoRa -> 2000-01-01 01:18:37,-127.00,146.29,14.00,2.12,45.16 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (812229) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (812230) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (812230) mqtt_client: Error transport connect[0m
+[0;33mW (812234) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (812240) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (813351) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (815762) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (816670) RX: LoRa -> 2000-01-01 01:18:42,-127.00,145.57,14.00,2.10,48.39 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (818173) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (820585) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (821670) RX: LoRa -> 2000-01-01 01:18:47,-127.00,145.21,14.00,2.12,46.13 | RSSI -40 dBm | WiFi:no MQTT:no | publicado:si[0m
+[1;31mE (822247) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (822248) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (822248) mqtt_client: Error transport connect[0m
+[0;33mW (822253) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (822259) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (822996) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (825407) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (826336) RX: LoRa -> 2000-01-01 01:18:52,-127.00,140.86,14.00,2.03,82.90 | RSSI -38 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (827818) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (830230) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (832265) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (832266) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (832266) mqtt_client: Error transport connect[0m
+[0;33mW (832270) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (832276) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (832641) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (835052) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (837463) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (839874) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (842283) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (842284) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (842284) mqtt_client: Error transport connect[0m
+[0;33mW (842286) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (842288) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (842299) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (844704) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (847115) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (849526) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (851937) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (852305) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (852306) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (852306) mqtt_client: Error transport connect[0m
+[0;33mW (852310) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (852316) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (854348) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (856759) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (859170) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (861581) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (862323) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (862324) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (862324) mqtt_client: Error transport connect[0m
+[0;33mW (862328) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (862334) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (863993) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (866404) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (868815) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (871226) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (872341) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (872342) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (872342) mqtt_client: Error transport connect[0m
+[0;33mW (872346) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (872352) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (873638) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (876049) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (878460) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (880871) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (882359) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (882360) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (882360) mqtt_client: Error transport connect[0m
+[0;33mW (882364) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (882370) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (883282) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (885694) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (888105) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (890515) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (892377) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (892378) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (892378) mqtt_client: Error transport connect[0m
+[0;33mW (892382) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (892388) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (892927) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (895338) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (897749) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (900160) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (902395) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (902396) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (902396) mqtt_client: Error transport connect[0m
+[0;33mW (902400) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (902406) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (902571) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (904982) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (907393) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (909804) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (912215) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (912413) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (912414) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (912414) mqtt_client: Error transport connect[0m
+[0;33mW (912418) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (912424) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (914627) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (917038) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (919449) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (921860) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (922431) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (922432) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (922432) mqtt_client: Error transport connect[0m
+[0;33mW (922436) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (922442) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (924272) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (926683) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (929094) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (931505) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (932449) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (932450) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (932450) mqtt_client: Error transport connect[0m
+[0;33mW (932454) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (932460) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (933916) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (936327) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (938739) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (941150) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (942467) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (942468) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (942468) mqtt_client: Error transport connect[0m
+[0;33mW (942472) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (942478) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (943561) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (945972) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (948384) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (950795) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (952486) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (952486) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (952487) mqtt_client: Error transport connect[0m
+[0;33mW (952491) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (952497) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (953206) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (955618) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (958029) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (960440) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (962503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (962504) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (962504) mqtt_client: Error transport connect[0m
+[0;33mW (962508) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (962514) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (962851) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (965262) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (967674) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (970085) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (972496) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (972521) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (972522) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (972522) mqtt_client: Error transport connect[0m
+[0;33mW (972526) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (972532) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (974907) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (977318) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (979730) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (982141) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (982539) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (982540) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (982540) mqtt_client: Error transport connect[0m
+[0;33mW (982544) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (982550) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (984552) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (986963) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (989374) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (991785) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (992557) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (992558) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (992558) mqtt_client: Error transport connect[0m
+[0;33mW (992562) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (992568) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (994197) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (996608) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (999019) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1001430) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1002575) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1002576) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1002576) mqtt_client: Error transport connect[0m
+[0;33mW (1002581) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1002587) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1003842) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1006253) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1008664) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1011075) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1012593) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1012594) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1012594) mqtt_client: Error transport connect[0m
+[0;33mW (1012599) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1012605) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1013487) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1015898) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1018309) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1020720) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1022611) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1022612) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1022612) mqtt_client: Error transport connect[0m
+[0;33mW (1022617) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1022623) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1023132) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1025543) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1027954) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1030365) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1032629) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1032630) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1032630) mqtt_client: Error transport connect[0m
+[0;33mW (1032635) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1032641) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1032776) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1035187) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1037598) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1040009) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1042420) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1042647) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1042648) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1042648) mqtt_client: Error transport connect[0m
+[0;33mW (1042653) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1042659) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1044831) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1047242) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1049654) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1052065) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1052665) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1052666) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1052666) mqtt_client: Error transport connect[0m
+[0;33mW (1052671) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1052677) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1054476) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1056888) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1059299) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1061710) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1062683) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1062684) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1062684) mqtt_client: Error transport connect[0m
+[0;33mW (1062689) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1062695) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1064121) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1066532) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1068943) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1071354) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1072701) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1072702) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1072702) mqtt_client: Error transport connect[0m
+[0;33mW (1072707) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1072713) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1073766) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1076177) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1078588) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1080999) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1082719) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1082720) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1082720) mqtt_client: Error transport connect[0m
+[0;33mW (1082725) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1082731) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1083411) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1085822) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1088233) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1090644) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1092737) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1092738) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1092738) mqtt_client: Error transport connect[0m
+[0;33mW (1092743) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1092749) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1093056) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1095467) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1097878) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1100289) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1102700) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1102755) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1102756) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1102756) mqtt_client: Error transport connect[0m
+[0;33mW (1102761) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1102767) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1105111) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1107523) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1109934) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1112345) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1112773) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1112774) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1112774) mqtt_client: Error transport connect[0m
+[0;33mW (1112779) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1112785) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1114756) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1117167) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1119578) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1121990) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1122791) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1122792) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1122792) mqtt_client: Error transport connect[0m
+[0;33mW (1122797) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1122803) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1124401) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1126812) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1129223) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1131635) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1132809) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1132810) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1132810) mqtt_client: Error transport connect[0m
+[0;33mW (1132815) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1132821) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1134046) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1136457) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1138868) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1141279) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1142827) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1142828) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1142828) mqtt_client: Error transport connect[0m
+[0;33mW (1142833) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1142839) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1143691) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1146102) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1148513) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1150924) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1152845) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1152846) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1152846) mqtt_client: Error transport connect[0m
+[0;33mW (1152851) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1152857) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1153336) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1155747) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1158158) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1160569) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1162863) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1162864) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1162864) mqtt_client: Error transport connect[0m
+[0;33mW (1162869) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1162875) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1162980) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1165391) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1167802) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1170214) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1172625) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1172881) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1172882) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1172882) mqtt_client: Error transport connect[0m
+[0;33mW (1172887) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1172893) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1175036) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1177447) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1179859) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1182270) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1182899) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1182900) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1182900) mqtt_client: Error transport connect[0m
+[0;33mW (1182905) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1182911) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1184681) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1187092) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1189503) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1191915) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1192917) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1192918) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1192918) mqtt_client: Error transport connect[0m
+[0;33mW (1192923) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1192929) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1194326) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1196737) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1199148) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1201559) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1202935) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1202936) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1202936) mqtt_client: Error transport connect[0m
+[0;33mW (1202941) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1202947) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1203971) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1206382) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1208793) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1211204) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1212953) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1212954) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1212954) mqtt_client: Error transport connect[0m
+[0;33mW (1212959) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1212965) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1213615) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1216026) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1218438) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1220849) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1222971) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1222972) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1222972) mqtt_client: Error transport connect[0m
+[0;33mW (1222977) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1222983) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1223260) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1225671) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1228082) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1230493) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1232904) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1232989) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1232990) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1232990) mqtt_client: Error transport connect[0m
+[0;33mW (1232995) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1233001) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1235316) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1237727) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1240138) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1242549) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1243007) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1243008) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1243008) mqtt_client: Error transport connect[0m
+[0;33mW (1243013) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1243019) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1244961) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1247372) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1249783) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1252194) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1253025) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1253026) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1253026) mqtt_client: Error transport connect[0m
+[0;33mW (1253031) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1253037) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1254605) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1257016) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1259427) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1261839) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1263043) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1263044) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1263044) mqtt_client: Error transport connect[0m
+[0;33mW (1263049) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1263055) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1264250) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1266661) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1269072) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1271483) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1273061) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1273062) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1273062) mqtt_client: Error transport connect[0m
+[0;33mW (1273067) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1273073) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1273894) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1276305) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1278716) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1281127) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1283079) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1283080) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1283080) mqtt_client: Error transport connect[0m
+[0;33mW (1283085) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1283091) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1283539) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1285950) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1288361) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1290772) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1293097) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1293098) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1293098) mqtt_client: Error transport connect[0m
+[0;33mW (1293103) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1293109) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1293183) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1295594) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1298005) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1300416) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1302827) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1303115) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1303116) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1303116) mqtt_client: Error transport connect[0m
+[0;33mW (1303121) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1303127) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1305239) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1307650) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1310061) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1312472) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1313133) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1313134) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1313134) mqtt_client: Error transport connect[0m
+[0;33mW (1313139) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1313145) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1314883) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1317294) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1319706) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1322117) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1323151) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1323152) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1323152) mqtt_client: Error transport connect[0m
+[0;33mW (1323157) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1323163) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1324528) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1326939) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1329350) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1331761) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1333169) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1333170) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1333170) mqtt_client: Error transport connect[0m
+[0;33mW (1333175) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1333181) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1334173) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1336584) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1338995) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1341406) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1343187) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1343188) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1343188) mqtt_client: Error transport connect[0m
+[0;33mW (1343193) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1343199) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1343817) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1346228) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1348639) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1351050) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1353205) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1353206) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1353206) mqtt_client: Error transport connect[0m
+[0;33mW (1353211) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1353217) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1353462) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1355873) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1358284) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1360695) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1363106) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1363223) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1363224) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1363224) mqtt_client: Error transport connect[0m
+[0;33mW (1363229) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1363235) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1365518) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1367929) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1370340) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1372751) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1373241) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1373242) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1373242) mqtt_client: Error transport connect[0m
+[0;33mW (1373247) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1373253) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1375163) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1377573) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1379985) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1382396) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1383259) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1383260) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1383260) mqtt_client: Error transport connect[0m
+[0;33mW (1383265) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1383271) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1384807) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1387218) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1389629) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1392040) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1393277) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1393278) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1393278) mqtt_client: Error transport connect[0m
+[0;33mW (1393283) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1393289) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1394451) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1396863) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1399274) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1401685) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1403295) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1403296) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1403296) mqtt_client: Error transport connect[0m
+[0;33mW (1403301) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1403307) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1404096) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1406507) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1408919) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1411330) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1413313) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1413314) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1413314) mqtt_client: Error transport connect[0m
+[0;33mW (1413319) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1413325) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1413741) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1416152) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1418563) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1420974) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1423331) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1423332) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1423332) mqtt_client: Error transport connect[0m
+[0;33mW (1423337) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1423343) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1423386) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1425797) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1428208) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1430619) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1433030) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1433349) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1433350) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1433350) mqtt_client: Error transport connect[0m
+[0;33mW (1433355) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1433361) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1435441) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1437852) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1440264) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1442675) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1443367) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1443368) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1443368) mqtt_client: Error transport connect[0m
+[0;33mW (1443373) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1443379) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1445086) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1447497) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1449909) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1452320) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1453385) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1453386) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1453386) mqtt_client: Error transport connect[0m
+[0;33mW (1453391) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1453397) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1454731) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1457142) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1459553) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1461965) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1463403) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1463404) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1463404) mqtt_client: Error transport connect[0m
+[0;33mW (1463409) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1463415) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1464376) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1466787) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1469198) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1471609) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1473421) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1473422) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1473422) mqtt_client: Error transport connect[0m
+[0;33mW (1473427) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1473433) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1474021) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1476432) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1478843) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1481254) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1483439) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1483440) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1483440) mqtt_client: Error transport connect[0m
+[0;33mW (1483445) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1483451) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1483665) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1486076) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1488487) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1490899) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1493310) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1493457) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1493458) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1493458) mqtt_client: Error transport connect[0m
+[0;33mW (1493463) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1493469) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1495721) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1498132) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1500543) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1502955) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1503475) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1503476) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1503476) mqtt_client: Error transport connect[0m
+[0;33mW (1503481) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1503487) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1505366) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1507777) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1510188) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1512599) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1513493) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1513494) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1513494) mqtt_client: Error transport connect[0m
+[0;33mW (1513499) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1513505) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1515011) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1517422) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1519833) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1522244) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1523511) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1523512) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1523512) mqtt_client: Error transport connect[0m
+[0;33mW (1523517) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1523523) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1524655) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1527066) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1529477) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1531888) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1533529) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1533530) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1533530) mqtt_client: Error transport connect[0m
+[0;33mW (1533535) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1533541) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1534300) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1536711) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1539122) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1541533) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1543547) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1543548) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1543548) mqtt_client: Error transport connect[0m
+[0;33mW (1543553) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1543559) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1543945) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1546356) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1548767) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1551178) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1553565) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1553566) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1553566) mqtt_client: Error transport connect[0m
+[0;33mW (1553571) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1553577) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1553589) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1556000) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1558411) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1560822) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1563233) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1563583) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1563584) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1563584) mqtt_client: Error transport connect[0m
+[0;33mW (1563589) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1563595) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1565644) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1568055) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1570466) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1572878) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1573601) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1573602) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1573602) mqtt_client: Error transport connect[0m
+[0;33mW (1573607) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1573613) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1575289) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1577700) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1580111) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1582522) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1583619) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1583620) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1583620) mqtt_client: Error transport connect[0m
+[0;33mW (1583625) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1583631) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1584934) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1587345) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1589756) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1592167) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1593637) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1593638) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1593638) mqtt_client: Error transport connect[0m
+[0;33mW (1593643) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1593649) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1594578) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1596989) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1599381) RX: LoRa -> 2026-10-27 14:50:59,-127.00,133.22,14.00,2.00,84.52 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1599401) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1600397) RX: LoRa -> 2026-10-27 14:51:00,-127.00,132.13,14.00,1.98,83.87 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1601812) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1603655) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1603656) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1603656) mqtt_client: Error transport connect[0m
+[0;33mW (1603661) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1603667) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1604224) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1605394) RX: LoRa -> 2026-10-27 14:51:05,-127.00,135.05,14.00,2.11,45.81 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1606635) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1609046) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1610394) RX: LoRa -> 2026-10-27 14:51:10,-127.00,135.41,14.00,2.10,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1611457) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1613673) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1613674) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1613674) mqtt_client: Error transport connect[0m
+[0;33mW (1613679) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1613685) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1613869) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1615394) RX: LoRa -> 2026-10-27 14:51:15,-127.00,135.78,14.00,2.12,48.39 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1616280) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1618691) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1620394) RX: LoRa -> 2026-10-27 14:51:20,-127.00,136.87,14.00,2.13,48.71 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1621103) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1623514) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1623691) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1623692) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1623692) mqtt_client: Error transport connect[0m
+[0;33mW (1623697) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1623703) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1625393) RX: LoRa -> 2026-10-27 14:51:25,-127.00,135.41,14.00,2.11,46.77 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1625925) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1628336) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1630393) RX: LoRa -> 2026-10-27 14:51:30,-127.00,135.78,14.00,2.10,47.74 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1630748) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1633159) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1633709) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1633710) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1633710) mqtt_client: Error transport connect[0m
+[0;33mW (1633715) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1633721) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1635393) RX: LoRa -> 2026-10-27 14:51:35,-127.00,136.14,14.00,2.13,48.39 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1635571) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1637982) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1640393) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1640396) RX: LoRa -> 2026-10-27 14:51:40,-127.00,136.14,14.00,2.14,46.77 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1642804) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1643727) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1643728) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1643728) mqtt_client: Error transport connect[0m
+[0;33mW (1643733) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1643739) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1645216) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1645393) RX: LoRa -> 2026-10-27 14:51:45,-127.00,136.50,14.00,2.13,46.77 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1647627) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1650038) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1650393) RX: LoRa -> 2026-10-27 14:51:50,-127.00,136.14,14.00,2.12,48.06 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1652450) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1653745) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1653746) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1653746) mqtt_client: Error transport connect[0m
+[0;33mW (1653751) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1653757) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1654861) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1655392) RX: LoRa -> 2026-10-27 14:51:55,-127.00,136.50,14.00,2.14,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1657272) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1659684) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1660392) RX: LoRa -> 2026-10-27 14:52:00,-127.00,136.87,14.00,2.12,48.06 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1662095) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1663763) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1663764) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1663764) mqtt_client: Error transport connect[0m
+[0;33mW (1663769) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1663775) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1664506) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1665392) RX: LoRa -> 2026-10-27 14:52:05,-127.00,136.50,14.00,2.11,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1666918) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1669329) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1670392) RX: LoRa -> 2026-10-27 14:52:10,-127.00,136.87,14.00,2.12,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1671740) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1673781) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1673782) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1673782) mqtt_client: Error transport connect[0m
+[0;33mW (1673787) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1673793) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1674152) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1675392) RX: LoRa -> 2026-10-27 14:52:15,-127.00,136.50,14.00,2.12,48.06 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1676563) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1678974) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1680392) RX: LoRa -> 2026-10-27 14:52:20,-127.00,136.87,14.00,2.11,47.42 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1681385) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1683797) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1683800) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1683801) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1683802) mqtt_client: Error transport connect[0m
+[0;33mW (1683807) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1683813) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1685391) RX: LoRa -> 2026-10-27 14:52:25,-127.00,137.96,14.00,2.12,46.45 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1686208) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1688619) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1690391) RX: LoRa -> 2026-10-27 14:52:30,-127.00,136.87,14.00,2.14,46.77 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1691031) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1693442) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1693819) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1693820) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1693820) mqtt_client: Error transport connect[0m
+[0;33mW (1693825) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1693831) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1695391) RX: LoRa -> 2026-10-27 14:52:35,-127.00,136.50,14.00,2.13,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1695854) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1698265) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1700391) RX: LoRa -> 2026-10-27 14:52:40,-127.00,136.50,14.00,2.14,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1700676) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1703087) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1703837) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1703838) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1703838) mqtt_client: Error transport connect[0m
+[0;33mW (1703843) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1703849) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1705391) RX: LoRa -> 2026-10-27 14:52:45,-127.00,137.96,14.00,2.15,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1705499) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1707910) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1710321) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1710391) RX: LoRa -> 2026-10-27 14:52:50,-127.00,137.60,14.00,2.20,47.42 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1712732) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1713855) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1713856) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1713856) mqtt_client: Error transport connect[0m
+[0;33mW (1713861) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1713867) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1715144) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1715390) RX: LoRa -> 2026-10-27 14:52:55,-127.00,137.60,14.00,2.15,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1717555) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1719966) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1720390) RX: LoRa -> 2026-10-27 14:53:00,-127.00,138.32,14.00,2.15,46.77 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1722378) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1723873) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1723874) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1723874) mqtt_client: Error transport connect[0m
+[0;33mW (1723879) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1723885) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1724789) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1725390) RX: LoRa -> 2026-10-27 14:53:05,-127.00,137.96,14.00,2.14,46.77 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1727201) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1729612) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1730390) RX: LoRa -> 2026-10-27 14:53:10,-127.00,136.87,14.00,2.13,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1732023) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1733891) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1733892) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1733892) mqtt_client: Error transport connect[0m
+[0;33mW (1733897) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1733903) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1734434) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1735390) RX: LoRa -> 2026-10-27 14:53:15,-127.00,138.69,14.00,2.15,47.74 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1736846) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1739257) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1740390) RX: LoRa -> 2026-10-27 14:53:20,-127.00,139.77,14.00,2.15,45.81 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1741668) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1743909) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1743910) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1743910) mqtt_client: Error transport connect[0m
+[0;33mW (1743915) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1743921) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1744079) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1745389) RX: LoRa -> 2026-10-27 14:53:25,-127.00,141.23,14.00,2.15,47.74 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1746491) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1748902) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1750389) RX: LoRa -> 2026-10-27 14:53:30,-127.00,144.84,14.00,2.15,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1751314) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1753725) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1753927) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1753928) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1753928) mqtt_client: Error transport connect[0m
+[0;33mW (1753933) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1753939) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1755389) RX: LoRa -> 2026-10-27 14:53:35,-127.00,145.93,14.00,2.14,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1756137) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1758548) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1760389) RX: LoRa -> 2026-10-27 14:53:40,-127.00,147.73,14.00,2.15,46.77 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1760959) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1763370) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1763945) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1763946) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1763946) mqtt_client: Error transport connect[0m
+[0;33mW (1763951) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1763957) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1765389) RX: LoRa -> 2026-10-27 14:53:45,-127.00,148.45,14.00,2.15,48.06 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1765782) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1768193) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1770389) RX: LoRa -> 2026-10-27 14:53:50,-127.00,146.65,14.00,2.15,49.35 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1770605) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1773016) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1773963) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1773964) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1773964) mqtt_client: Error transport connect[0m
+[0;33mW (1773969) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1773975) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1775388) RX: LoRa -> 2026-10-27 14:53:55,-127.00,146.65,14.00,2.14,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1775428) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1777839) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1780250) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1780388) RX: LoRa -> 2026-10-27 14:54:00,-127.00,148.45,14.00,2.15,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1782662) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1783981) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1783982) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1783982) mqtt_client: Error transport connect[0m
+[0;33mW (1783987) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1783993) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1785073) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1785388) RX: LoRa -> 2026-10-27 14:54:05,-127.00,147.73,14.00,2.15,47.42 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1787485) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1789896) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1790388) RX: LoRa -> 2026-10-27 14:54:10,-127.00,148.45,14.00,2.15,46.13 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1792307) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1793999) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1794000) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1794000) mqtt_client: Error transport connect[0m
+[0;33mW (1794005) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1794011) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1794719) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1795388) RX: LoRa -> 2026-10-27 14:54:15,-127.00,149.89,14.00,2.18,47.42 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1797130) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1799541) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1800389) RX: LoRa -> 2026-10-27 14:54:20,-127.00,149.89,14.00,2.15,48.39 | RSSI -17 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1801953) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1804017) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1804018) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1804018) mqtt_client: Error transport connect[0m
+[0;33mW (1804023) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1804029) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1804364) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1805388) RX: LoRa -> 2026-10-27 14:54:25,-127.00,147.73,14.00,2.15,49.03 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1806776) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1809187) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1810387) RX: LoRa -> 2026-10-27 14:54:30,-127.00,144.48,14.00,2.15,48.06 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1811599) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1814010) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1814035) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1814036) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1814036) mqtt_client: Error transport connect[0m
+[0;33mW (1814041) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1814047) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1815387) RX: LoRa -> 2026-10-27 14:54:35,-127.00,142.67,14.00,2.15,49.03 | RSSI -16 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1816421) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1818832) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1820387) RX: LoRa -> 2026-10-27 14:54:40,-127.00,137.60,14.00,2.14,48.71 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1821244) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1823655) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1824053) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1824054) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1824054) mqtt_client: Error transport connect[0m
+[0;33mW (1824059) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1824065) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1825387) RX: LoRa -> 2026-10-27 14:54:45,-127.00,136.50,14.00,2.14,46.45 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1826067) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1828478) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1830387) RX: LoRa -> 2026-10-27 14:54:50,-127.00,137.60,14.00,2.14,46.77 | RSSI -18 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1830890) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1833301) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1834071) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1834072) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1834072) mqtt_client: Error transport connect[0m
+[0;33mW (1834077) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1834083) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1835386) RX: LoRa -> 2026-10-27 14:54:55,-127.00,138.69,14.00,2.15,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1835712) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1838123) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1840386) RX: LoRa -> 2026-10-27 14:55:00,-127.00,137.96,14.00,2.15,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1840535) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1842946) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1844089) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1844090) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1844090) mqtt_client: Error transport connect[0m
+[0;33mW (1844095) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1844101) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1845357) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1845386) RX: LoRa -> 2026-10-27 14:55:05,-127.00,138.69,14.00,2.18,48.71 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1847769) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1850180) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1850386) RX: LoRa -> 2026-10-27 14:55:10,-127.00,138.32,14.00,2.14,48.06 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1852591) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1854107) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1854108) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1854108) mqtt_client: Error transport connect[0m
+[0;33mW (1854113) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1854119) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1855003) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1855386) RX: LoRa -> 2026-10-27 14:55:15,-127.00,138.69,14.00,2.17,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1857414) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1859825) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1860386) RX: LoRa -> 2026-10-27 14:55:20,-127.00,139.41,14.00,2.17,48.39 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1862237) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1864125) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1864126) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1864126) mqtt_client: Error transport connect[0m
+[0;33mW (1864131) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1864137) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1864648) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1865385) RX: LoRa -> 2026-10-27 14:55:25,-127.00,138.32,14.00,2.17,48.39 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1867060) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1869471) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1870385) RX: LoRa -> 2026-10-27 14:55:30,-127.00,139.41,14.00,2.18,47.42 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1871882) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1874143) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1874144) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1874144) mqtt_client: Error transport connect[0m
+[0;33mW (1874149) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1874155) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1874294) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1875385) RX: LoRa -> 2026-10-27 14:55:35,-127.00,139.41,14.00,2.17,46.45 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1876705) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1879116) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1880385) RX: LoRa -> 2026-10-27 14:55:40,-127.00,140.86,14.00,2.17,46.45 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1881527) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1883938) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1884161) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1884162) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1884162) mqtt_client: Error transport connect[0m
+[0;33mW (1884167) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1884173) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1885385) RX: LoRa -> 2026-10-27 14:55:45,-127.00,140.86,14.00,2.15,48.39 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1886350) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1888761) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1890385) RX: LoRa -> 2026-10-27 14:55:50,-127.00,139.41,14.00,2.17,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1891173) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1893584) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1894179) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1894180) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1894180) mqtt_client: Error transport connect[0m
+[0;33mW (1894185) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1894191) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1895384) RX: LoRa -> 2026-10-27 14:55:55,-127.00,138.69,14.00,2.18,46.13 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1895996) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1898407) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1900384) RX: LoRa -> 2026-10-27 14:56:00,-127.00,139.77,14.00,2.19,49.35 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1900818) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1903229) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1904198) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1904199) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1904199) mqtt_client: Error transport connect[0m
+[0;33mW (1904204) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1904210) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1905384) RX: LoRa -> 2026-10-27 14:56:05,-127.00,140.86,14.00,2.19,49.68 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1905642) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1908053) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1910384) RX: LoRa -> 2026-10-27 14:56:10,-127.00,141.23,14.00,2.18,49.35 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1910464) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1912875) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1914216) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1914217) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1914217) mqtt_client: Error transport connect[0m
+[0;33mW (1914222) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1914228) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1915287) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1915384) RX: LoRa -> 2026-10-27 14:56:15,-127.00,139.77,14.00,2.20,48.06 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1917698) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1920109) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1920384) RX: LoRa -> 2026-10-27 14:56:20,-127.00,140.86,14.00,2.21,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1922521) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1924234) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1924235) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1924235) mqtt_client: Error transport connect[0m
+[0;33mW (1924240) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1924246) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1924932) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1925383) RX: LoRa -> 2026-10-27 14:56:25,-127.00,139.41,14.00,2.20,48.39 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1927344) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1929755) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1930383) RX: LoRa -> 2026-10-27 14:56:30,-127.00,139.77,14.00,2.25,47.74 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1932166) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1934252) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1934253) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1934253) mqtt_client: Error transport connect[0m
+[0;33mW (1934258) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1934264) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1934578) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1935383) RX: LoRa -> 2026-10-27 14:56:35,-127.00,140.50,14.00,2.19,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1936989) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1939400) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1940383) RX: LoRa -> 2026-10-27 14:56:40,-127.00,139.41,14.00,2.20,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1941811) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1944222) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1944270) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1944271) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1944271) mqtt_client: Error transport connect[0m
+[0;33mW (1944276) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1944282) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1945383) RX: LoRa -> 2026-10-27 14:56:45,-127.00,141.23,14.00,2.21,47.74 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1946634) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1949045) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1950383) RX: LoRa -> 2026-10-27 14:56:50,-127.00,140.86,14.00,2.20,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1951456) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1953868) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1954288) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1954289) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1954289) mqtt_client: Error transport connect[0m
+[0;33mW (1954294) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1954300) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1955382) RX: LoRa -> 2026-10-27 14:56:55,-127.00,141.59,14.00,2.21,48.71 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1956279) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1958691) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1960382) RX: LoRa -> 2026-10-27 14:57:00,-127.00,141.95,14.00,2.21,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1961102) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1963513) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1964306) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1964307) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1964307) mqtt_client: Error transport connect[0m
+[0;33mW (1964312) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1964318) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1965382) RX: LoRa -> 2026-10-27 14:57:05,-127.00,141.23,14.00,2.20,48.06 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1965925) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1968336) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1970382) RX: LoRa -> 2026-10-27 14:57:10,-127.00,141.23,14.00,2.21,49.35 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1970747) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1973158) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1974324) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1974325) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1974325) mqtt_client: Error transport connect[0m
+[0;33mW (1974330) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1974336) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (1975382) RX: LoRa -> 2026-10-27 14:57:15,-127.00,141.59,14.00,2.21,50.32 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1975570) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1977981) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1980382) RX: LoRa -> 2026-10-27 14:57:20,-127.00,142.31,14.00,2.21,50.00 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1980393) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1982804) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1984342) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1984343) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1984343) mqtt_client: Error transport connect[0m
+[0;33mW (1984348) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1984354) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1985215) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1985382) RX: LoRa -> 2026-10-27 14:57:25,-127.00,141.23,14.00,2.20,49.35 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1987627) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1990038) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1990381) RX: LoRa -> 2026-10-27 14:57:30,-127.00,142.67,14.00,2.21,49.35 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1992449) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (1994360) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (1994361) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (1994361) mqtt_client: Error transport connect[0m
+[0;33mW (1994366) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (1994372) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (1994860) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (1995381) RX: LoRa -> 2026-10-27 14:57:35,-127.00,142.31,14.00,2.23,50.97 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (1997272) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (1999683) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2000381) RX: LoRa -> 2026-10-27 14:57:40,-127.00,141.23,14.00,2.20,49.35 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2002094) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2004378) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2004379) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2004379) mqtt_client: Error transport connect[0m
+[0;33mW (2004384) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2004390) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (2004506) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2005381) RX: LoRa -> 2026-10-27 14:57:45,-127.00,142.31,14.00,2.21,50.65 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2006917) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2009328) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2010381) RX: LoRa -> 2026-10-27 14:57:50,-127.00,142.67,14.00,2.23,49.68 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2011740) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2014151) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2014396) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2014397) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2014397) mqtt_client: Error transport connect[0m
+[0;33mW (2014402) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2014408) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2015380) RX: LoRa -> 2026-10-27 14:57:55,-127.00,142.31,14.00,2.22,50.32 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2016562) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2018974) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2020380) RX: LoRa -> 2026-10-27 14:58:00,-127.00,141.23,14.00,2.22,46.77 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2021385) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2023796) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2024414) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2024415) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2024415) mqtt_client: Error transport connect[0m
+[0;33mW (2024420) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2024426) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2025380) RX: LoRa -> 2026-10-27 14:58:05,-127.00,142.31,14.00,2.23,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2026208) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2028619) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2030380) RX: LoRa -> 2026-10-27 14:58:10,-127.00,143.40,14.00,2.21,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2031030) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2033441) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2034432) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2034433) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2034433) mqtt_client: Error transport connect[0m
+[0;33mW (2034438) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2034444) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2035380) RX: LoRa -> 2026-10-27 14:58:15,-127.00,142.67,14.00,2.23,48.71 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2035853) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2038264) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2040380) RX: LoRa -> 2026-10-27 14:58:20,-127.00,142.67,14.00,2.22,48.06 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2040676) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2043087) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2044450) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2044451) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2044451) mqtt_client: Error transport connect[0m
+[0;33mW (2044456) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2044462) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2045379) RX: LoRa -> 2026-10-27 14:58:25,-127.00,141.95,14.00,2.23,48.39 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2045498) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2047909) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2050320) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2050379) RX: LoRa -> 2026-10-27 14:58:30,-127.00,141.95,14.00,2.22,48.71 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2052732) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2054468) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2054469) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2054469) mqtt_client: Error transport connect[0m
+[0;33mW (2054474) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2054480) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (2055143) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2055379) RX: LoRa -> 2026-10-27 14:58:35,-127.00,143.40,14.00,2.24,49.03 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2057554) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2059966) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2060379) RX: LoRa -> 2026-10-27 14:58:40,-127.00,143.40,14.00,2.25,48.71 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2062377) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2064486) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2064487) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2064487) mqtt_client: Error transport connect[0m
+[0;33mW (2064492) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2064498) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (2064789) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2065379) RX: LoRa -> 2026-10-27 14:58:45,-127.00,142.67,14.00,2.24,48.71 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2067200) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2069611) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2070379) RX: LoRa -> 2026-10-27 14:58:50,-127.00,144.12,14.00,2.23,48.39 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2072023) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2074434) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2074504) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2074505) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2074505) mqtt_client: Error transport connect[0m
+[0;33mW (2074510) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2074516) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2075379) RX: LoRa -> 2026-10-27 14:58:55,-127.00,143.40,14.00,2.22,50.00 | RSSI -20 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2076845) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2079256) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2080378) RX: LoRa -> 2026-10-27 14:59:00,-127.00,143.40,14.00,2.23,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2081668) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2084079) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2084522) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2084523) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2084523) mqtt_client: Error transport connect[0m
+[0;33mW (2084528) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2084534) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2085378) RX: LoRa -> 2026-10-27 14:59:05,-127.00,144.12,14.00,2.25,48.71 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2086491) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2088902) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2090378) RX: LoRa -> 2026-10-27 14:59:10,-127.00,144.12,14.00,2.24,49.03 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2091313) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2093724) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2094540) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2094541) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2094541) mqtt_client: Error transport connect[0m
+[0;33mW (2094546) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2094552) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2095378) RX: LoRa -> 2026-10-27 14:59:15,-127.00,144.12,14.00,2.25,48.71 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2096136) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2098547) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2100378) RX: LoRa -> 2026-10-27 14:59:20,-127.00,143.40,14.00,2.24,49.68 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2100959) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2103370) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2104558) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2104559) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2104559) mqtt_client: Error transport connect[0m
+[0;33mW (2104564) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2104570) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2105377) RX: LoRa -> 2026-10-27 14:59:25,-127.00,143.76,14.00,2.24,48.06 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2105782) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2108193) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2110377) RX: LoRa -> 2026-10-27 14:59:30,-127.00,144.48,14.00,2.25,48.06 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2110604) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2113015) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2114576) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2114577) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2114577) mqtt_client: Error transport connect[0m
+[0;33mW (2114582) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2114588) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2115377) RX: LoRa -> 2026-10-27 14:59:35,-127.00,143.76,14.00,2.25,50.00 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2115427) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2117838) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2120249) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2120377) RX: LoRa -> 2026-10-27 14:59:40,-127.00,144.84,14.00,2.25,49.68 | RSSI -19 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2122661) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2124594) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2124595) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2124595) mqtt_client: Error transport connect[0m
+[0;33mW (2124600) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2124606) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (2125072) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2125377) RX: LoRa -> 2026-10-27 14:59:45,-127.00,144.12,14.00,2.25,49.35 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2127483) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2129895) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2130377) RX: LoRa -> 2026-10-27 14:59:50,-127.00,144.84,14.00,2.25,48.71 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2132306) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2134612) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2134613) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2134613) mqtt_client: Error transport connect[0m
+[0;33mW (2134618) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2134624) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;33mW (2134717) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2135376) RX: LoRa -> 2026-10-27 14:59:55,-127.00,143.76,14.00,2.25,50.00 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2137129) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2139540) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2140376) RX: LoRa -> 2026-10-27 15:00:00,-127.00,143.76,14.00,2.25,49.68 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2141952) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2144363) wifi: WiFi desconectado, reintentando...[0m
+[1;31mE (2144630) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[1;31mE (2144631) transport_base: Failed to open a new connection: 32772[0m
+[1;31mE (2144631) mqtt_client: Error transport connect[0m
+[0;33mW (2144636) mqtt: Error MQTT (revisa IP, usuario y clave del broker)[0m
+[0;33mW (2144642) mqtt: Desconectado del broker (se reintenta solo)[0m
+[0;32mI (2145376) RX: LoRa -> 2026-10-27 15:00:05,-127.00,144.12,14.00,2.24,49.03 | RSSI -25 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2146774) wifi: WiFi desconectado, reintentando...[0m
+[0;33mW (2149185) wifi: WiFi desconectado, reintentando...[0m
+[0;32mI (2150376) RX: LoRa -> 2026-10-27 15:00:10,-127.00,144.84,14.00,2.25,48.06 | RSSI -24 dBm | WiFi:no MQTT:no | publicado:si[0m
+[0;33mW (2151597) wifi: WiFi desconectado, reintentando...[0m
+ng RNG early entropy source...
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0e620h ( 58912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001e648 vaddr=3fc95600 size=019d0h (  6608) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=215f0h (136688) map[0m
+[0;32mI (125) esp_image: segment 3: paddr=00041618 vaddr=3fc96fd0 size=0199ch (  6556) load[0m
+[0;32mI (127) esp_image: segment 4: paddr=00042fbc vaddr=40374000 size=115cch ( 71116) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=00054590 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (177) app_init: Project name:     biosense_tx[0m
+[0;32mI (181) app_init: App version:      a81e515-dirty[0m
+[0;32mI (186) app_init: Compile time:     Oct 27 2026 14:47:13[0m
+[0;32mI (191) app_init: ELF file SHA256:  73e8fecfc...[0m
+[0;32mI (195) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (199) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (203) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (207) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (210) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (217) heap_init: At 3FC99328 len 000503E8 (320 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (227) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (232) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (238) spi_flash: detected chip: gd[0m
+[0;32mI (241) spi_flash: flash io: dio[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) TX: BIOSENSE - Nodo transmisor[0m
+[0;32mI (289) sensors: Sensores inicializados[0m
+[0;32mI (353) sx1262: SX1262 listo: 915000000 Hz, SF7, CR4/5, 14 dBm[0m
+[0;32mI (354) RTC: DS3231 inicializado[0m
+[0;33mW (355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (374) main_task: Returned from app_main()[0m
+[0;32mI (375) RTC: 27/10/2026 15:03:21[0m
+[0;32mI (376) TX: Trama: 2026-10-27 15:03:21,-127.00,175.56,14.00,3.35,70.32[0m
+[0;32mI (485) TX: Datos enviados[0m
+[0;33mW (5355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (5372) RTC: 27/10/2026 15:03:26[0m
+[0;32mI (5373) TX: Trama: 2026-10-27 15:03:26,-127.00,164.92,14.00,2.54,54.84[0m
+[0;32mI (5482) TX: Datos enviados[0m
+[0;33mW (10355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (10372) RTC: 27/10/2026 15:03:31[0m
+[0;32mI (10373) TX: Trama: 2026-10-27 15:03:31,-127.00,169.19,14.00,2.52,53.55[0m
+[0;32mI (10482) TX: Datos enviados[0m
+[0;33mW (15355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (15372) RTC: 27/10/2026 15:03:36[0m
+[0;32mI (15373) TX: Trama: 2026-10-27 15:03:36,-127.00,162.43,14.00,2.46,53.23[0m
+[0;32mI (15482) TX: Datos enviados[0m
+[0;33mW (20355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (20372) RTC: 27/10/2026 15:03:41[0m
+[0;32mI (20373) TX: Trama: 2026-10-27 15:03:41,-127.00,160.29,14.00,2.43,51.94[0m
+[0;32mI (20482) TX: Datos enviados[0m
+[0;33mW (25355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (25372) RTC: 27/10/2026 15:03:46[0m
+[0;32mI (25373) TX: Trama: 2026-10-27 15:03:46,-127.00,157.07,14.00,2.41,53.55[0m
+[0;32mI (25482) TX: Datos enviados[0m
+[0;33mW (30355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (30372) RTC: 27/10/2026 15:03:51[0m
+[0;32mI (30373) TX: Trama: 2026-10-27 15:03:51,-127.00,157.78,14.00,2.41,53.87[0m
+[0;32mI (30482) TX: Datos enviados[0m
+[0;33mW (35355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (35372) RTC: 27/10/2026 15:03:56[0m
+[0;32mI (35373) TX: Trama: 2026-10-27 15:03:56,-127.00,153.84,14.00,2.39,51.29[0m
+[0;32mI (35482) TX: Datos enviados[0m
+[0;33mW (40355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (40372) RTC: 27/10/2026 15:04:01[0m
+[0;32mI (40373) TX: Trama: 2026-10-27 15:04:01,-127.00,153.49,14.00,2.39,51.29[0m
+[0;32mI (40482) TX: Datos enviados[0m
+[0;33mW (45355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (45372) RTC: 27/10/2026 15:04:06[0m
+[0;32mI (45373) TX: Trama: 2026-10-27 15:04:06,-127.00,152.77,14.00,2.37,51.29[0m
+[0;32mI (45482) TX: Datos enviados[0m
+[0;33mW (50355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (50372) RTC: 27/10/2026 15:04:11[0m
+[0;32mI (50373) TX: Trama: 2026-10-27 15:04:11,-127.00,151.69,14.00,2.35,50.65[0m
+[0;32mI (50482) TX: Datos enviados[0m
+[0;33mW (55355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (55372) RTC: 27/10/2026 15:04:16[0m
+[0;32mI (55373) TX: Trama: 2026-10-27 15:04:16,-127.00,150.61,14.00,2.34,50.97[0m
+[0;32mI (55482) TX: Datos enviados[0m
+[0;33mW (60355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (60372) RTC: 27/10/2026 15:04:21[0m
+[0;32mI (60373) TX: Trama: 2026-10-27 15:04:21,-127.00,151.33,14.00,2.33,52.90[0m
+[0;32mI (60482) TX: Datos enviados[0m
+[0;33mW (65355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (65372) RTC: 27/10/2026 15:04:26[0m
+[0;32mI (65373) TX: Trama: 2026-10-27 15:04:26,-127.00,148.81,14.00,2.30,51.94[0m
+[0;32mI (65482) TX: Datos enviados[0m
+[0;33mW (70355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (70372) RTC: 27/10/2026 15:04:31[0m
+[0;32mI (70373) TX: Trama: 2026-10-27 15:04:31,-127.00,148.09,14.00,2.39,50.65[0m
+[0;32mI (70482) TX: Datos enviados[0m
+[0;33mW (75355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (75372) RTC: 27/10/2026 15:04:36[0m
+[0;32mI (75373) TX: Trama: 2026-10-27 15:04:36,-127.00,147.73,14.00,2.30,50.97[0m
+[0;32mI (75482) TX: Datos enviados[0m
+[0;33mW (80355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (80372) RTC: 27/10/2026 15:04:41[0m
+[0;32mI (80373) TX: Trama: 2026-10-27 15:04:41,-127.00,147.73,14.00,2.33,51.29[0m
+[0;32mI (80482) TX: Datos enviados[0m
+[0;33mW (85355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (85372) RTC: 27/10/2026 15:04:46[0m
+[0;32mI (85373) TX: Trama: 2026-10-27 15:04:46,-127.00,147.37,14.00,2.28,50.00[0m
+[0;32mI (85482) TX: Datos enviados[0m
+[0;33mW (90355) ds18b20: Sin presencia en el bus 1-Wire (revisar cableado/pull-up)[0m
+[0;32mI (90372) RTC: 27/10/2026 15:04:51[0m
+[0;32mI (90373) TX: Trama: 2026-10-27 15:04:51,-127.00,148.09,14.00,2.28,48.39[0m
+[0;32mI (90482) TX: Datos enviados[0m
+[0;33mW (95355) ds18b20: Sin presencia en el bus 1-
